@@ -1,0 +1,291 @@
+code,price,price_percent,price_cent,NS_shown,NS,category,product,weight,unit_weight,picture,kcal_100,lipides_100,ags_100,glucides_100,sucres_100,proteines_100,sel_100,fibres_100,scoreFSA,microcategory
+1138,2.55,2.55,2.55,0,A,Viandes,2 Steaks hachés pur boeuf 15 % mg<br />&nbsp;,250,g,GAEL_Label4-011.jpg,129,5,2.3,0,0,21,0.23,0,-1,Meat&Fish&Eggs
+1190,3.8,3.8,3.8,0,A,Viandes,2 Steaks hachés de viande charolaise<br />façon bouchère 5%mg,250,g,GAEL_Label4-012.jpg,121,4.69,1.64,0,0,19.6,0.14,0,-3,Meat&Fish&Eggs
+1178,1.12,1.12,1.12,0,D,Viandes,Côte première de porc<br />&nbsp;,160,g,GAEL-Catalogue-059.jpg,271,23.5,10.5,0,0,15.5,0,0,13,Meat&Fish&Eggs
+1181,1.42,1.42,1.42,1,C,Viandes,2 Tranches de rôti de porc<br />&nbsp;,90,g,Label2-67.jpg,119,3,1.1,0.9,0.9,22,1.8,0,4,Meat&Fish&Eggs
+1165,3.84,3.84,3.84,0,A,Viandes,2 Filets de poulet<br />&nbsp;,320,g,Label2-51.jpg,108,0.7,0,0,0,25,0,0,-4,Meat&Fish&Eggs
+1120,2.98,2.98,2.98,0,A,Viandes,Tranche de gigot d'agneau<br />&nbsp;,200,g,GAEL-Catalogue-gigot.jpg,102,2.57,0.8,0,0,19.6,0.18,0,-4,Meat&Fish&Eggs
+1169,3.94,3.94,3.94,0,C,Viandes,Entrecôte de boeuf<br />&nbsp;,180,g,GAEL-Catalogue-entrecote.jpg,227,17,8.06,0,0,18.4,0.14,0,5,Meat&Fish&Eggs
+1184,2.82,2.54,2.81,1,B,Viandes,8 Cordons bleus de volaille<br />&nbsp;,800,g,Label2-111.jpg,209,13,3,15,4.5,12,1.6,2.5,2,Meat&Fish&Eggs
+1135,2.35,2.12,2.34,1,B,Viandes,Aiguillettes de poulet pané<br />&nbsp;,200,g,Label2-49.jpg,194,8,1.5,12.7,1.7,18,0.6,0.6,0,Meat&Fish&Eggs
+1262,1.65,1.98,1.67,1,E,"Jambons, saucissons",Dés de lardons fumés<br />&nbsp;,200,g,GAEL-Catalogue-077.jpg,250,20,7.8,0.4,0.4,17,2.2,0.5,19,Meat&Fish&Eggs
+1211,2.31,2.54,2.32,1,D,"Jambons, saucissons",4 Tranches de jambon sec<br />qualité supérieure,100,g,Label2-64.jpg,283,9.1,4.4,1,1,30,2.5,0,17,Meat&Fish&Eggs
+1274,1.18,1.18,1.18,1,C,"Jambons, saucissons",2 Tranches de blanc de dinde<br />doré au four,160,g,GAEL-Catalogue-085.jpg,109,2.2,0.6,0.5,0.5,22,2.2,0,5,Meat&Fish&Eggs
+1251,1.43,1.43,1.43,1,C,"Jambons, saucissons",2 Tranches de blanc de poulet<br />doré au four,160,g,Label2-65.jpg,102,1.6,0.4,1,1,21,1.8,0,3,Meat&Fish&Eggs
+1240,2.08,1.87,2.07,1,B,"Jambons, saucissons",4 Tranches de jambon de Paris<br />sans couenne réduit en sel ,160,g,Label2-63.jpg,117,2.9,1,0.6,0.6,22,1.4,0,2,Meat&Fish&Eggs
+1266,1.33,1.33,1.33,1,C,"Jambons, saucissons",2 Tranches de jambon supérieur<br />sans couenne,80,g,Label2-66.jpg,114,2.8,1.1,0.8,0.8,21,1.8,0,4,Meat&Fish&Eggs
+1253,1.69,1.69,1.69,1,C,"Jambons, saucissons",2 Tranches de jambon le supérieur<br />avec couenne,80,g,GAEL-Catalogue-095.jpg,136,5.1,1.8,0.6,0.6,22,1.8,0,4,Meat&Fish&Eggs
+1218,1.65,1.98,1.67,1,E,"Jambons, saucissons",Saucisse sèche pur porc<br />&nbsp;,200,g,GAEL_Label4-004.jpg,484,41,17,3.5,3.2,23,4.4,0.5,26,Meat&Fish&Eggs
+1214,3.96,4.75,3.98,1,E,"Jambons, saucissons",Saucisson sec bio<br />&nbsp;,200,g,Label2-94.jpg,416,34,12,0,0,27,4.6,0,25,Meat&Fish&Eggs
+1317,0.92,1.1,0.94,1,E,"Pâtés,  Saucisses",Mousse de canard au porto<br />&nbsp;,100,g,GAEL-Catalogue-099.jpg,433,43,16,2.1,2,9.4,1.5,0,21,Cereals&Potatoes
+1388,1.06,1.17,1.07,1,D,"Pâtés,  Saucisses",Terrine de campagne à l'ancienne<br />&nbsp;,180,g,Label2-76.jpg,269,22,9,2,0.5,15,1.5,1.5,15,Cereals&Potatoes
+1341,1.77,1.95,1.78,1,D,"Pâtés,  Saucisses",Rillettes du mans<br />&nbsp;,220,g,GAEL-Catalogue-105.jpg,431,40.5,15.2,0.4,0.2,16.2,1.13,2.4,16,Cereals&Potatoes
+1389,1.14,1.25,1.15,1,D,"Pâtés,  Saucisses",6 Saucisses de volaille<br />&nbsp;,210,g,GAEL_Label4-003.jpg,238,20,6,1.1,0.8,14,1.9,0,15,Cereals&Potatoes
+1335,2.85,3.14,2.86,1,D,"Pâtés,  Saucisses",6 Chipolatas aux herbes<br />&nbsp;,330,g,Label2-50.jpg,272,23.5,8.2,1,1,13.9,1.6,0,17,Cereals&Potatoes
+1384,1.39,1.53,1.4,1,D,"Pâtés,  Saucisses",6 Knacki 100% pur porc<br />&nbsp;,210,g,GAEL-Catalogue-104.jpg,267,23,9,2,2,12.5,1.8,1.2,17,Cereals&Potatoes
+1372,1.86,2.23,1.88,1,E,"Pâtés,  Saucisses",4 Saucisses de Francfort<br />&nbsp;,220,g,GAEL_Label4-002.jpg,312,7.2,7.2,1.1,1.1,13,2.3,0,20,Cereals&Potatoes
+1390,1.25,1.5,1.27,1,E,"Pâtés,  Saucisses",10 tranches de rosette<br />&nbsp;,100,g,Label2-121.jpg,399,33,14,1.5,1,24,4.2,0,24,Cereals&Potatoes
+1454,3.2,2.56,3.18,1,A,"Poissons, fruits de mer",4 Tranches de colin surgelées<br />pêché en pacifique nord,400,g,GAEL-Catalogue-109.jpg,70,0.5,0.1,0,0,17,0.4,0,-4,Meat&Fish&Eggs
+1484,6.85,5.48,6.83,1,A,"Poissons, fruits de mer","4 Filets de saumon sauvage<br />surgelés, pêché en  pacifique nord",400,g,GAEL-Catalogue-111.jpg,109,3.8,0.7,0.5,0.5,19,0.13,0,-4,Meat&Fish&Eggs
+1458,1.59,1.27,1.57,1,A,"Poissons, fruits de mer",Thon albacore au naturel<br />&nbsp;,140,g,Label2-87.jpg,115,1.04,0.38,0,0,26.4,0.72,0,-1,Meat&Fish&Eggs
+1468,1.75,1.75,1.75,1,C,"Poissons, fruits de mer",Sardines à l'huile d'olive<br />&nbsp;,87,g,Label2-90.jpg,221,15,3.3,0,0,22,1,0,4,Meat&Fish&Eggs
+1466,1.85,2.04,1.86,1,D,"Poissons, fruits de mer",Oeufs de lompe noirs<br />&nbsp;,100,g,Label2-77.jpg,144,7.52,2.23,0,0,19.2,2.43,0,13,Meat&Fish&Eggs
+1432,3.21,2.89,3.2,1,B,"Poissons, fruits de mer",20 Bâtonnets de poisson panés<br />&nbsp;,600,g,GAEL-Catalogue-130.jpg,195,8.6,1.1,17,0.3,12,0.93,0.8,1,Meat&Fish&Eggs
+1485,3.26,3.26,3.26,1,C,"Poissons, fruits de mer",18 Bâtonnets délices de surimi<br />à la chair de crabe,300,g,Label2-47.jpg,111,4.5,0.4,8.7,3,8.8,1.8,0,3,Meat&Fish&Eggs
+1475,2.38,2.62,2.39,1,D,"Poissons, fruits de mer",Tarama aux oeufs de cabillaud<br />&nbsp;,250,g,Label2-78.jpg,577,60.3,4.2,2.5,0.8,5.5,1.4,1,16,Meat&Fish&Eggs
+1465,4.69,5.16,4.7,1,D,"Poissons, fruits de mer",4 Tranches de saumon fumé<br />&nbsp;,150,g,GAEL-Catalogue-138.jpg,168,8,1.6,1.2,0,23,3.7,0,13,Meat&Fish&Eggs
+1575,2.29,2.29,2.29,0,A,Légumes frais,Haricots verts<br />&nbsp;,1,kg,GAEL-Catalogue-728.jpg,23.9,0.1,0.03,2.75,2.75,1.35,0.71,4.1,-7,Vegetables
+1589,0.65,0.65,0.65,0,A,Légumes frais,Concombre<br />&nbsp;,pièce,pièce,GAEL-Catalogue-732.jpg,12,0.19,0.01,1.68,1.68,59,0.01,0.7,-10,Vegetables
+1559,1.49,1.49,1.49,0,A,Légumes frais,Courgettes<br />&nbsp;,1,kg,GAEL-Catalogue-730.jpg,20,0.27,0.05,2.49,2.49,1.34,0.01,1.35,-6,Vegetables
+1514,2.9,2.9,2.9,0,A,Légumes frais,Aubergines<br />&nbsp;,1,kg,GAEL-Catalogue-731.jpg,35.2,0.2,0.03,6.26,6.26,0.83,0.4,2.5,-6,Vegetables
+1584,1.49,1.49,1.49,0,A,Légumes frais,Avocat<br />&nbsp;,pièce,pièce,GAEL-Catalogue-729.jpg,169,16,2.3,3.13,3.13,1.8,0.1,5.6,-7,Vegetables
+1587,1.79,1.79,1.79,0,A,Légumes frais,Tomates en grappes<br />&nbsp;,1,kg,GAEL-Catalogue-727.jpg,20.8,0.03,0,3.86,3.86,0.73,0.76,1.5,-4,Vegetables
+1526,0.89,0.89,0.89,0,A,Légumes frais,Carottes<br />&nbsp;,1,kg,GAEL-Catalogue-724.jpg,26.6,0.1,0.02,5.09,5.09,0.82,0.13,2,-6,Vegetables
+1512,1.29,1.29,1.29,0,B,Légumes frais,Pommes de terre<br />&nbsp;,1,kg,GAEL-Catalogue-726.jpg,89.5,0.22,0.03,19.1,19.1,1.87,0,1.8,2,Vegetables
+1531,2.2,2.2,2.2,0,A,Légumes frais,Brocolis<br />&nbsp;,1,kg,GAEL-Catalogue-725.jpg,28.7,0.51,0.12,2.82,2.82,2.1,0.13,2.23,-9,Vegetables
+1690,3.49,3.49,3.49,0,A,Fruits frais,Raisin noir<br />&nbsp;,1,kg,GAEL-Catalogue-738.jpg,62,0.25,0.08,15,15,0.5,0,1.3,-3,Fruits
+1671,2.6,2.6,2.6,0,A,Fruits frais,Poire williams<br />&nbsp;,1,kg,GAEL-Catalogue-733.jpg,53,0.22,0.03,10.8,10.8,0.39,0,3.03,-7,Fruits
+1633,1.89,1.89,1.89,0,A,Fruits frais,Bananes<br />&nbsp;,1,kg,GAEL-Catalogue-735.jpg,93.6,0.23,0.06,20.5,20.5,1.2,0,1,-1,Fruits
+1659,2.69,2.69,2.69,0,A,Fruits frais,Oranges<br />&nbsp;,1,kg,GAEL-Catalogue-740.jpg,46.5,0.26,0.05,8.32,8.32,0.96,0.01,1.82,-6,Fruits
+1678,2.79,2.79,2.79,0,A,Fruits frais,Citrons<br />&nbsp;,1,kg,GAEL-Catalogue-739.jpg,34.3,0.3,0.09,2.9,2.9,0.8,0.01,2,-7,Fruits
+1679,0.4,0.4,0.4,0,A,Fruits frais,Kiwi<br />&nbsp;,pièce,g,GAEL-Catalogue-736.jpg,57.7,0.73,0.04,9.37,9.37,1.1,0.01,2.4,-6,Fruits
+1617,1.49,1.49,1.49,0,A,Fruits frais,Pommes golden<br />&nbsp;,1,kg,GAEL-Catalogue-734.jpg,42.4,0.1,0.01,11.3,11.3,0.1,0,1.95,-5,Fruits
+1627,2.19,2.19,2.19,0,A,Fruits frais,Pêches jaunes<br />&nbsp;,1,kg,GAEL-Catalogue-905.jpg,53.4,0.25,0.02,11.3,11.3,0.9,0,2,-5,Fruits
+1634,2.19,2.19,2.19,0,A,Fruits frais,Melon<br />&nbsp;,1,kg,GAEL-Catalogue-906.jpg,32.1,0.15,0.05,7.25,7.25,0.71,0.03,0.9,-5,Fruits
+1791,1.37,1.1,1.35,1,A,Légumes en conserve,Petits pois carottes<br />&nbsp;,265,g,Label2-38.jpg,54,0.5,0.1,7.2,3.4,2.9,0.6,4.5,-9,Vegetables
+1734,0.62,0.5,0.6,1,A,Légumes en conserve,Macédoine de légumes<br />&nbsp;,265,g,GAEL-Catalogue-139.jpg,38,0.5,0.1,5,1.1,2.1,0.7,3.4,-7,Vegetables
+1771,1.08,0.86,1.06,1,A,Légumes en conserve,Mais doux en grain<br />&nbsp;,285,g,GAEL-Catalogue-145.jpg,101,1.1,0.2,19.1,4,2.5,0.4,2.1,-6,Vegetables
+1736,1.04,0.83,1.02,1,A,Légumes en conserve,Champignons de Paris entiers<br />&nbsp;,230,g,Label2-75.jpg,19,0.4,0.1,0.9,0.3,2.2,0.58,2.2,-7,Vegetables
+1727,0.78,0.62,0.76,1,A,Légumes en conserve,Petits pois extra fins à l'étuvée<br />&nbsp;,280,g,GAEL-Catalogue-151.jpg,88,0.9,0.2,11,4.4,5.8,0.53,0,-5,Vegetables
+1754,1.22,0.98,1.2,1,A,Légumes en conserve,Flageolets verts extra fins<br />&nbsp;,530,g,GAEL-Catalogue-153.jpg,80,0,0,12,0.2,4.9,0.7,5.8,-10,Vegetables
+1753,1.71,1.37,1.69,1,A,Légumes en conserve,Haricots verts extra fins<br />&nbsp;,345,g,GAEL-Catalogue-793.jpg,26,0,0,3,0.5,1.6,0.75,3,-6,Vegetables
+1746,2.51,2.01,2.49,1,A,Légumes en conserve,Coeurs d'artichauts<br />&nbsp;,240,g,Label2-40.jpg,26,0.1,0,3,1.7,1.8,0.7,2.1,-5,Vegetables
+1712,1.65,1.32,1.63,1,A,Légumes en conserve,Lentilles du Berry cuisinées<br />&nbsp;,400,g,GAEL-Catalogue-162.jpg,96,2.1,0.6,12,0.8,5.1,0.99,5.1,-4,Vegetables
+1861,1.35,1.08,1.33,1,A,Pommes de terre transformées,Purée de pommes de terre<br />nature déshydratée,125,g,GAEL-Catalogue-165.jpg,346,0.7,0.5,74.3,2.9,7.4,0.06,6.6,-5,Cereals&Potatoes
+1895,2.19,1.97,2.18,1,B,Pommes de terre transformées,Pommes dauphines surgelées<br />&nbsp;,600,g,Label2-108.jpg,267,16,2.1,26,2.3,3.5,0.6,2.5,2,Cereals&Potatoes
+1860,2.08,1.66,2.06,1,A,Pommes de terre transformées,Quartiers de pommes de terre<br />aux épices douces surgelés,700,g,Label2-109.jpg,141,5,0.6,20,0.5,2.5,0.5,3,-2,Cereals&Potatoes
+1845,1.2,1.08,1.19,1,B,Pommes de terre transformées,Purée de pommes de terre surgelée<br />&nbsp;,750,g,GAEL-Catalogue-799.jpg,101,3.1,2.1,15,0.9,2,0.68,1.9,2,Cereals&Potatoes
+1831,1.08,1.08,1.08,1,C,Pommes de terre transformées,Pommes noisettes surgelées<br />&nbsp;,480,g,GAEL-Catalogue-180.jpg,184,7.5,0.6,25,0.5,2.5,0.78,0.5,4,Cereals&Potatoes
+1877,0.82,0.66,0.8,1,A,Pommes de terre transformées,Frites surgelées pour friteuse<br />&nbsp;,1,kg,Label2-112.jpg,123,3.2,0.4,20,0.5,2.4,0.04,2.5,-3,Cereals&Potatoes
+2096,2.58,2.06,2.56,1,A,Pommes de terre transformées,"Poêlée de pommes de terre<br />champignons et lardons, surgelée",700,g,Label2-106.jpg,95,4.5,0.9,8.5,1.8,3,0.73,4,-3,Cereals&Potatoes
+1814,1.26,1.01,1.24,1,A,Pommes de terre transformées,Frites surgelées pour micro-ondes<br />&nbsp;,180,g,GAEL-Catalogue-189.jpg,257,13,1,28,0.5,4,0.1,6,-4,Cereals&Potatoes
+1953,0.73,0.58,0.71,1,A,"Pâtes, Riz",Coquillettes<br />&nbsp;,500,g,GAEL-Catalogue-191.jpg,359,2,0.5,71.7,3.5,12,0.01,3,-5,Meat&Fish&Eggs
+1922,0.92,0.74,0.9,1,A,"Pâtes, Riz",Macaronis aux oeufs frais<br />&nbsp;,250,g,GAEL-Catalogue-195.jpg,372,3.5,0.8,70,6,13.5,0.06,3,-4,Meat&Fish&Eggs
+1984,0.9,0.72,0.88,1,A,"Pâtes, Riz",Spaghettis au blé complet<br />&nbsp;,500,g,GAEL_Label4-010.jpg,350,2.5,0.5,65.7,3.5,13,0.01,6.5,-6,Meat&Fish&Eggs
+1939,1.15,0.92,1.13,1,A,"Pâtes, Riz",Semoule grains fins<br />prête en 5 minutes,500,g,Label2-30.jpg,360,2,0.3,72,2,12,0.03,3,-5,Meat&Fish&Eggs
+1968,1.4,1.12,1.38,1,A,"Pâtes, Riz",Blé précuit<br />&nbsp;,500,g,Label2-31.jpg,355,1.4,0.7,70.5,1.6,12.1,0.03,6.1,-6,Meat&Fish&Eggs
+1925,1.44,1.15,1.42,1,A,"Pâtes, Riz",Riz basmati<br />&nbsp;,500,g,GAEL-Catalogue-201.jpg,353,0.9,0,76,0.2,9.3,0,0.2,-1,Meat&Fish&Eggs
+2036,3.2,2.56,3.18,1,A,Légumes cuisinés,Poêlée de légumes grillés<br />&nbsp;,750,g,Label2-110.jpg,47,1.5,0.2,5.8,5.3,1.3,0.66,2.3,-5,Vegetables
+2015,2.75,2.2,2.73,1,A,Légumes cuisinés,"Poêlée brocolis, pommes de terre<br />carottes, haricots, champignons",700,g,Label2-107.jpg,69,2.9,0.7,7.5,2.1,1.9,0.73,2.9,-3,Vegetables
+1867,2.17,1.74,2.15,1,A,Légumes cuisinés,Cuisiné lentilles riz et soja<br />&nbsp;,250,g,Label2-32.jpg,155,6.9,1.2,13,1.8,6.8,0.89,6.8,-5,Vegetables
+2088,2.29,1.83,2.27,1,A,Légumes cuisinés,"Mix brocolis, haricots verts<br />petits pois et pois gourmands",400,g,GAEL_Label4-017.jpg,54,2.1,0.7,3.3,1.4,3.3,0.2,4.2,-12,Vegetables
+2028,2.42,1.94,2.4,1,A,Légumes cuisinés,Pâtes à la bolognaise<br />&nbsp;,300,g,Label2-62.jpg,126,2.4,0.6,19.8,2.5,5,0.7,2.7,-2,Vegetables
+2068,2.5,2,2.48,1,A,Légumes cuisinés,Lasagnes de légumes<br />&nbsp;,300,g,GAEL_Label4-013.jpg,70,1,0.5,11,4.5,3,0.52,2.5,-3,Vegetables
+2163,4.2,3.78,4.19,1,B,Plats cuisinés à la viande,Moussaka à la viande de boeuf<br />&nbsp;,600,g,Label2-104.jpg,132,8.5,2.4,8.4,3.4,4.7,0.65,1.5,1,MixedDishes
+2144,3.49,3.14,3.48,1,B,Plats cuisinés à la viande,Couscous royal 4 viandes<br />&nbsp;,1.05,kg,GAEL-Catalogue-217.jpg,151,4.7,1.8,18,1.9,8.5,1.3,2,0,MixedDishes
+2141,1.06,0.85,1.04,1,A,Plats cuisinés à la viande,Cassoulet pur porc<br />&nbsp;,420,g,GAEL-Catalogue-220.jpg,125,5.8,2.3,8.1,1.6,8,0.94,3.3,-2,MixedDishes
+2139,1.54,1.54,1.54,1,C,Plats cuisinés à la viande,Choucroute garnie au vin blanc<br />&nbsp;,400,g,GAEL-Catalogue-223.jpg,84,6.5,2.4,1.4,0.3,3.7,1,1.1,3,MixedDishes
+2122,2.56,2.05,2.54,1,A,Plats cuisinés à la viande,Hachis parmentier pur boeuf<br />&nbsp;,300,g,GAEL_Label4-014.jpg,103,4.5,2.4,9.6,1.2,5.6,0.1,0.8,-1,MixedDishes
+2182,2.69,2.69,2.69,1,C,Plats cuisinés à la viande,"Saucisses de Toulouse, écrasé de<br />pommes de terre, sauce moutarde",300,g,GAEL-Catalogue-234.jpg,133,8.5,4.2,9.4,1,4,0.9,0,6,MixedDishes
+2165,1.13,1.02,1.12,1,B,Plats cuisinés à la viande,Raviolis sauce bolognaise<br />&nbsp;,800,g,GAEL-Catalogue-231.jpg,86,2.1,1,12,2,4.2,1,1,2,MixedDishes
+2162,1.8,1.62,1.79,1,B,Plats cuisinés à la viande,Pâtes au poulet sauce champignons<br />&nbsp;,300,g,GAEL-Catalogue-235.jpg,173,7,4,13.7,1,6.8,0.6,0.9,2,MixedDishes
+2157,3.66,3.29,3.65,1,B,Plats cuisinés à la viande,Gratin de macaronis au jambon<br />surgelé,900,g,GAEL_Label4-018.jpg,131,6.6,3,16.4,0.3,5.2,0.8,0.9,2,MixedDishes
+2266,2.96,3.26,2.97,1,D,Plats cuisinés au fromage,2 Feuilletés chèvre épinard<br />&nbsp;,300,g,GAEL-Catalogue-244.jpg,273,15,11,26,0.6,6.6,0.71,2.1,14,MixedDishes
+2292,2.92,3.21,2.93,1,D,Plats cuisinés au fromage,Fondue 3 fromages<br />&nbsp;,400,g,Label2-46.jpg,237,18,13,2.5,1,14,1.3,0,17,MixedDishes
+2210,2.17,2.17,2.17,1,C,Plats cuisinés au fromage,Pâtes à la carbonara<br />&nbsp;,300,g,GAEL-Catalogue-249.jpg,173,7.6,4.3,18.6,2.2,7.1,0.9,1,4,MixedDishes
+2269,1.6,1.44,1.59,1,B,Plats cuisinés au fromage,20 Crêpes jambon<br />fromage surgelées,1,kg,Label2-105.jpg,164,6.9,1.6,19,0,6.2,0.8,0.8,2,MixedDishes
+2237,1.67,1.84,1.68,1,D,Plats cuisinés au fromage,Galette Jambon<br />mozzarella et emmental,195,g,GAEL-Catalogue-802.jpg,192,11,4.6,10.5,1.8,11.7,1.48,1,11,MixedDishes
+2250,2.63,2.37,2.62,1,B,Plats cuisinés au fromage,Steak de tofu pané<br />au soja et fromage,200,g,GAEL-Catalogue-256.jpg,205,13,4.4,1.7,0.8,18,0.99,5,-5,MixedDishes
+2360,2.25,1.8,2.23,1,A,Plats cuisinés au poisson,Merlu blanc sauce marnière<br />et riz basmati,300,g,Label2-58.jpg,456,11.2,3,58.8,0,24.9,0.03,3,-2,MixedDishes
+2335,1.75,1.75,1.75,1,C,Plats cuisinés au poisson,Quenelles de saumon sauce océane<br />&nbsp;,400,g,Label2-41.jpg,107,6.1,2.4,9.2,0.9,3.4,0.9,0,4,MixedDishes
+2386,4.99,3.99,4.97,1,A,Plats cuisinés au poisson,"Papillote de saumon, poireau<br />épinards, sauce au fromage blanc",300,g,GAEL-Catalogue-634.jpg,105,7.1,2.1,1.4,1,8.2,0.54,1.9,-3,MixedDishes
+2321,3.99,3.19,3.97,1,A,Plats cuisinés au poisson,"Poêlée de riz, crevettes<br />et noix de saint jacques",600,g,GAEL-Catalogue-637.jpg,100,2.8,1.8,13,2.1,4.5,0.65,2.2,-1,MixedDishes
+2363,3.58,3.22,3.57,1,B,Plats cuisinés au poisson,Spaghettis aux gambas<br />&nbsp;,350,g,GAEL-Catalogue-639.jpg,79,2.6,1.3,10,1.8,3.7,0.7,1.3,1,MixedDishes
+2357,3.37,2.7,3.35,1,A,Plats cuisinés au poisson,Cabillaud sauce citron<br />riz aux petits légumes,290,g,Label2-57.jpg,134,4.6,1.2,15,1,7.8,0.64,0.8,-1,MixedDishes
+2469,1.89,1.89,1.89,1,C,Pizzas,Pizza royale cuite sur pierre<br />surgelée,400,g,GAEL-Catalogue-259.jpg,199,6.8,2.8,25,6.1,7.8,1.5,2.4,8,MixedDishes
+2493,1.95,1.76,1.94,1,B,Pizzas,Pizza bolognaise surgelée<br />&nbsp;,375,g,GAEL-Catalogue-261.jpg,220,9.8,2.9,23,3.1,9.3,1.1,1.8,1,MixedDishes
+2467,1.9,1.9,1.9,1,C,Pizzas,Pizza 3 fromages surgelée<br />&nbsp;,350,g,GAEL-Catalogue-263.jpg,250,7.9,4.6,31,3.4,10,1.5,2.5,10,MixedDishes
+2443,3.91,3.52,3.9,1,B,Pizzas,Pizza quatre fromages<br />&nbsp;,380,g,Label2-98.jpg,264,9.1,4,32,3.1,12,1,2.3,2,MixedDishes
+2452,1.1,1.1,1.1,1,C,Pizzas,Pizza jambon fromage<br />&nbsp;,200,g,GAEL-Catalogue-267.jpg,220,7.4,4,26.7,2.1,10.3,1.45,2.5,8,MixedDishes
+2456,3.95,3.56,3.94,1,B,Pizzas,Pizza Bio 4 saisons surgelée<br />&nbsp;,420,g,Label2-99.jpg,205,8.4,3,23.3,2.3,7.7,1.24,2.6,1,MixedDishes
+2520,2.69,2.96,2.7,1,D,"Tartes salées, Quiches",Tarte saumon et poireau surgelée<br />&nbsp;,400,g,Label2-103.jpg,223,13.3,6.8,17.9,1.9,7.4,0.98,1.3,11,MixedDishes
+2591,2.47,2.47,2.47,1,C,"Tartes salées, Quiches","Tarte au chèvre, tomates<br />et courgettes grillées surgelée",400,g,Label2-102.jpg,237,12.8,7,22.5,2,7.4,0.86,1.1,10,MixedDishes
+2575,2.2,1.98,2.19,1,B,"Tartes salées, Quiches",Tarte aux fromages surgelée<br />&nbsp;,400,g,GAEL-Catalogue-273.jpg,254,15,2.7,21,4,9.6,0.63,0.8,1,MixedDishes
+2519,1.76,1.58,1.75,1,B,"Tartes salées, Quiches",Tarte Poireau surgelée<br />&nbsp;,400,g,Label2-100.jpg,211,9.9,4.4,23,4,5.8,0.88,4,1,MixedDishes
+2568,2.3,2.53,2.31,1,D,"Tartes salées, Quiches",Quiche lorraine surgelée<br />&nbsp;,400,g,Label2-101.jpg,257,16,8.6,18.3,1.2,9.6,0.86,0.8,13,MixedDishes
+2557,1.46,1.31,1.45,1,B,"Tartes salées, Quiches",Quiche lorraine surgelée<br />à la crème fraîche,400,g,GAEL-Catalogue-649.jpg,240,13,4.5,19,1.6,10,0.44,1,1,MixedDishes
+2620,2.15,1.94,2.14,1,B,Salades,Salade de concombres<br />&nbsp;,300,g,GAEL-Catalogue-312.jpg,86,7.5,1.3,3,2,1,0.8,1,-1,Vegetables
+2679,0.75,0.68,0.74,1,B,Salades,Salade de céleri rémoulade <br />&nbsp;,500,g,Label2-52.jpg,88,7,0.5,4,1.9,0.9,1.2,2.5,1,Vegetables
+2645,1.09,0.87,1.07,1,A,Salades,Salade de carottes râpées<br />&nbsp;,300,g,GAEL-Catalogue-315.jpg,77,5,0.3,5.5,4,1,0.7,3,-6,Vegetables
+2651,1.1,0.99,1.09,1,B,Salades,Salade de chou et de carottes<br />&nbsp;,300,g,Label2-84.jpg,109,8.8,0.7,5.6,4.7,0.8,0.82,2.1,1,Vegetables
+2691,1.54,1.23,1.52,1,A,Salades,Salade de betteraves<br />&nbsp;,300,g,GAEL-Catalogue-320.jpg,68,2.5,0.5,8.8,6.2,1.5,0.47,2.1,-4,Vegetables
+2618,1.95,1.76,1.94,1,B,Salades,Salade piémontais<br />au jambon et tomates fraîches,320,g,GAEL-Catalogue-658.jpg,131,9.5,1,6.5,1,4,0.9,1.5,0,Vegetables
+2789,1.78,1.78,1.78,1,C,Soupes,"Velouté de poireau, pommes de<br />terre et pointe de crème fraîche",1,L,GAEL-Catalogue-322.jpg,46,2.5,1,4.8,0.7,0.8,0.72,0.6,3,MixedDishes
+2798,0.94,1.03,0.95,1,D,Soupes,Poule au pot aux vermicelles<br />&nbsp;,72,g,GAEL-Catalogue-804.jpg,21,0.2,0.1,3.8,0.7,0.6,0.7,0.2,3,MixedDishes
+2794,1.78,1.6,1.77,1,B,Soupes,Velouté de tomates de Provence<br />&nbsp;,1,L,GAEL-Catalogue-325.jpg,39,0.7,0.4,7.2,3.1,0.6,0.73,0.5,1,MixedDishes
+2734,3.36,2.69,3.34,1,A,Soupes,Soupe de poisson<br />&nbsp;,950,ml,Label2-15.jpg,39,1.1,0.6,1.3,1.3,5.5,0.25,1.2,-3,MixedDishes
+2749,3.48,2.78,3.46,1,A,Soupes,"Gaspacho, soupe froide de légumes<br />&nbsp;",1,L,GAEL-Catalogue-330.jpg,34,1,0.1,4.3,3.5,1.1,0.5,1.4,-4,MixedDishes
+2711,2.31,2.31,2.31,1,C,Soupes,Douceur de légumes d'autrefois<br />&nbsp;,1,L,GAEL_Label4-001.jpg,54,2.9,1.8,5.6,1.9,1.1,0.78,0.7,4,MixedDishes
+2872,1,0.9,0.99,1,B,Snacks,Cacahuètes grillées<br />très pauvres en sel,200,g,GAEL-Catalogue-292.jpg,625,51,7.2,11,5.2,27,0.05,8,0,Snacks&Sweets
+2849,1.09,1.09,1.09,1,C,Snacks,Cacahuètes délicatement salées<br />&nbsp;,220,g,GAEL-Catalogue-297.jpg,606,53,8.9,5.8,3.9,27,0.99,6.8,4,Snacks&Sweets
+2859,2.49,2.24,2.48,1,B,Snacks,Chips de maïs nature<br />&nbsp;,230,g,GAEL-Catalogue-302.jpg,497,24,1.9,63,1,6.9,0.7,3.3,2,Snacks&Sweets
+2898,2.48,2.73,2.49,1,D,Snacks,Chips paysannes nature<br />&nbsp;,300,g,GAEL-Catalogue-304.jpg,600,39,4,54,0.4,6,1.5,4,11,Snacks&Sweets
+2851,2.25,2.48,2.26,1,D,Snacks,Soufflés de maïs goût cacahuète<br />&nbsp;,250,g,Label2-113.jpg,468,18.8,2.7,58.9,2.6,13.9,2.2,3.6,10,Snacks&Sweets
+2810,0.52,0.62,0.54,1,E,Snacks,Biscuits apéritif à l'emmental<br />&nbsp;,50,g,Label2-35.jpg,555,36,17,45,5.5,12,1.88,2.3,22,Snacks&Sweets
+2868,0.97,1.16,0.99,1,E,Snacks,Biscuits apéritif tomate<br />&nbsp;,85,g,Label2-85.jpg,475,28,13,46,6.9,9.2,2.1,2.7,22,Snacks&Sweets
+2847,1.02,1.22,1.04,1,E,Snacks,Biscuits apéritif nature<br />&nbsp;,150,g,Label2-34.jpg,465,19,8.4,65,7.5,8.1,2.45,2.3,21,Snacks&Sweets
+2837,1.31,1.31,1.31,1,C,Snacks,6 Paquets de chips aromatisées<br />&nbsp;,165,g,GAEL-Catalogue-656.jpg,532,32,2.6,52,2.2,6.4,1.3,4.2,8,Snacks&Sweets
+2983,2.28,2.05,2.27,1,B,Sandwichs,3 Sandwiches thon crudités<br />au pain complet,230,g,Label2-44.jpg,203,7,0.8,24.3,2.6,9.4,1.4,2.8,0,MixedDishes
+2970,1.38,1.1,1.36,1,A,Sandwichs,2 Sandwiches poulet crudités<br />au pain de mie complet,145,g,GAEL-Catalogue-284.jpg,202,5.8,0.5,27,3,8.9,1.4,3.2,-1,MixedDishes
+2967,0.75,0.83,0.76,1,D,Sandwichs,2 Sandwiches jambon beurre<br />&nbsp;,125,g,Label2-45.jpg,246,10,5.7,27,2.7,10,1.7,2.6,12,MixedDishes
+2989,1.36,1.36,1.36,1,C,Sandwichs,2 Sandwiches jambon crudités<br />emmental,200,g,GAEL-Catalogue-288.jpg,212,8.1,2.1,24,3.6,9.7,1.7,3,7,MixedDishes
+2946,2.5,2.75,2.51,1,D,Sandwichs,Croque-monsieur surgelé<br />&nbsp;,200,g,GAEL-Catalogue-652.jpg,258,11,7,27.2,5.6,11.6,1.25,2,13,MixedDishes
+2951,1.18,1.3,1.19,1,D,Sandwichs,2 Croque-monsieurs<br />&nbsp;,200,g,Label2-53.jpg,267,13,6.4,26,3.1,12,1.9,1.3,16,MixedDishes
+3030,1.74,1.74,1.74,1,C,Laits,Lait écrémé en poudre<br />&nbsp;,300,g,GAEL-Catalogue-333.jpg,35.9,0.08,0.05,5.2,5.2,3.6,0.11,0.06,-1,Dairies
+3028,0.94,0.85,0.93,1,B,Laits,Lait demi écrémé <br />&nbsp;,1,L,GAEL-Catalogue-344.jpg,46,1.6,1.6,4.8,4.8,3.2,0.1,1.1,0,Dairies
+3095,1.13,1.02,1.12,1,B,Laits,Lait enrichi en vitamine D<br />&nbsp;,1,L,Label2-17.jpg,45,1.5,1,4.8,4.8,3.2,0.11,0,0,Dairies
+3099,0.98,0.88,0.97,1,B,Laits,Lait entier de montagne<br />&nbsp;,1,L,GAEL-Catalogue-349.jpg,64,3.6,2.2,4.8,4.8,3.2,0.1,0.4,2,Dairies
+3048,1.25,1.13,1.24,1,B,Laits,"Lait demi écrémé<br />teneur réduite en lactose, 1.2%MG",1,L,GAEL-Catalogue-347.jpg,42,1.2,0,4.8,4.8,3.2,0.1,0,0,Dairies
+3047,1.91,1.72,1.9,1,B,Boissons lactées,Boisson au riz<br />&nbsp;,1,L,Label2-20.jpg,60,1.2,0.2,12,4.9,0.5,0.08,0.5,1,Dairies
+3013,1.12,0.9,1.1,1,A,Boissons lactées,Boisson au soja nature<br />&nbsp;,1,L,Label2-21.jpg,41,2.1,0.4,1.4,0.7,3.8,0.01,0.6,-2,Dairies
+3063,2.19,1.75,2.17,1,A,Boissons lactées,Boisson au soja bio<br />et chocolat,1,L,Label2-22.jpg,74,2.5,0.5,8.5,8,3.8,0.1,1,-2,Dairies
+3085,1.88,1.69,1.87,1,B,Boissons lactées,6 Boissons lactées chocolatées<br />&nbsp;,1.2,L,GAEL-Catalogue-814.jpg,63,1,0.7,11,11,2.4,0.1,0.4,1,Dairies
+3131,1.25,1,1.23,1,A,Produits laitiers nature,"Fromage blanc 2,8% MG<br />&nbsp;",1,kg,Label2-73.jpg,71,2.8,1.9,5.1,5.1,6.4,0.1,0,-1,Dairies
+3120,1.28,1.15,1.27,1,B,Produits laitiers nature,4 Yaourts nature au lait entier<br />&nbsp;,500,g,GAEL-Catalogue-744.jpg,67,3.3,2.2,4.8,4.7,3.9,0.15,0,1,Dairies
+3116,0.5,0.4,0.48,1,A,Produits laitiers nature,4 Yaourts nature<br />&nbsp;,500,g,Label2-69.jpg,43,1.1,0.7,4.8,4.8,4,0.13,0,-1,Dairies
+3182,1.53,1.38,1.52,1,B,Produits laitiers nature,"12 Petits suisses 9,2% MG<br />&nbsp;",720,g,GAEL-Catalogue-357.jpg,143,9.5,6.7,4.5,4.5,9.3,0.08,0.1,2,Dairies
+3141,2.7,2.16,2.68,1,A,Produits laitiers nature,10 Laits fermentés<br />nature sucrés à 0% MG,1,kg,Label2-80.jpg,28,0.1,0.03,3.3,3.3,2.8,0.1,0,-1,Dairies
+3112,0.81,0.73,0.8,1,B,Produits laitiers nature,4 Yaourts nature au bifidus<br />&nbsp;,500,g,Label2-70.jpg,63,3.5,2.1,4.1,4.1,3.7,0.1,0,0,Dairies
+3171,1.74,1.57,1.73,1,B,Produits laitiers nature,8 Yaourts nature 0% MG<br />&nbsp;,1,kg,GAEL-Catalogue-364.jpg,173,0.1,0,4.7,4.3,4.5,0.06,0,0,Dairies
+3157,1.28,1.02,1.26,1,A,Produits laitiers nature,6 Yaourts nature au soja <br />&nbsp;,600,g,GAEL-Catalogue-820.jpg,41,2.1,0.4,2.1,0.5,38,0.1,1.3,-6,Dairies
+3110,1.49,1.19,1.47,1,A,Produits laitiers nature,8 Fromages blancs nature<br />&nbsp;,720,g,GAEL-Catalogue-369.jpg,72,3,2.1,4.4,4.4,6.9,0.11,1.7,-4,Dairies
+3229,0.54,0.54,0.54,1,C,Crèmerie,Crème fraîche épaisse<br />légère 15% MG,20,cl,GAEL-Catalogue-371.jpg,169,15,10,6,3.9,2.5,0.11,1.6,9,Dairies
+3284,1.39,1.53,1.4,1,D,Crèmerie,Crème fraîche épaisse 30% MG<br />&nbsp;,480,g,GAEL-Catalogue-374.jpg,292,30.2,20.2,2.9,2.9,2.3,0.09,0.5,13,Dairies
+3279,2.17,2.17,2.17,1,C,Crèmerie,2 pots de crème fraîche fluide<br />légère 12% MG,2*25,cl,GAEL-Catalogue-377.jpg,143,12,8,5.8,4,3,0.1,0,7,Dairies
+3239,1.07,1.07,1.07,1,C,Crèmerie,Crème anglaise<br />&nbsp;,50,cl,GAEL-Catalogue-379.jpg,79,3.2,1.9,14,14,3.2,0.18,0.5,3,Dairies
+3256,1.74,1.91,1.75,1,D,Crèmerie,3 briques de crème fraîche<br />fluide entière 30% MG,3*20,cl,GAEL-Catalogue-382.jpg,291,30,30,3.3,3.2,2,0.08,0,13,Dairies
+3291,1.33,1.46,1.34,1,D,Crèmerie,Crème fouettée allégée<br />&nbsp;,250,g,Label2-23.jpg,237,19.6,13,13,12,2.6,0.13,0,14,Dairies
+3358,1.9,1.9,1.9,0,A,Oeufs,6 Gros oeufs plein air<br />&nbsp;,6,pièces,GAEL-Catalogue-878.jpg,142,9.9,2.6,0.8,0.8,12.6,0.33,0,-1,Meat&Fish&Eggs
+3359,3.05,3.05,3.05,0,A,Oeufs,6 Oeufs bio fermiers<br />&nbsp;,6,pièces,GAEL-Catalogue-880.jpg,142,9.9,2.6,0.8,0.8,12.6,0.33,0,-1,Meat&Fish&Eggs
+3312,1.06,1.06,1.06,0,A,Oeufs,6 Gros oeufs<br />&nbsp;,6,pièces,GAEL-Catalogue-882.jpg,142,9.9,2.6,0.8,0.8,12.6,0.33,0,-1,Meat&Fish&Eggs
+3464,1.18,0.94,1.16,1,A,Crèmes desserts,4 Crèmes desserts au chocolat<br />&nbsp;,500,g,GAEL-Catalogue-385.jpg,122,3,2,20,17.5,3.3,0.18,3,-1,Dairies
+3426,1.07,1.07,1.07,1,C,Crèmes desserts,2 Desserts au chocolat<br />&nbsp;,300,g,GAEL-Catalogue-387.jpg,154,8.2,5.3,16,16,3.4,0.1,1.1,6,Dairies
+3421,1.72,1.72,1.72,1,C,Crèmes desserts,4 Fromages blancs straciatella<br />&nbsp;,480,g,GAEL-Catalogue-758.jpg,155,6.9,4.7,18.1,17.6,4.9,0.07,1.7,3,Dairies
+3483,2.04,2.04,2.04,1,C,Crèmes desserts,Gâteau de riz sur lit de caramel<br />&nbsp;,500,g,Label2-74.jpg,138,2.3,1.4,26.5,15.5,3,0.08,0.1,4,Dairies
+3432,1.84,2.21,1.86,1,E,Crèmes desserts,8 Génoises enrobées de chocolat<br />fourrées à la mousse de lait,240,g,Label2-125.jpg,446,28.3,18.1,41.5,34.5,5.3,0.23,0,23,Dairies
+3454,2,2.2,2.01,1,D,Crèmes desserts,4 pots de crème caramel<br />aux oeufs frais,400,g,Label2-130.jpg,181,9.3,5.1,20,20,4.3,0.11,0,11,Dairies
+3450,3.42,4.1,3.44,1,E,Crèmes desserts,2 Fondants chocolat<br />&nbsp;,200,g,Label2-79.jpg,442,27.1,15.6,44.7,37.6,6.3,0.1,2.6,20,Dairies
+3415,2.37,2.61,2.38,1,D,Crèmes desserts,4 Pots de crème brûlée<br />&nbsp;,400,g,GAEL-Catalogue-884.jpg,306,24.6,14.5,16.8,16.7,4.4,0.09,0,16,Dairies
+3537,1.02,0.82,1,1,A,Desserts lactés aromatisés,4 Pots de spécialité laitière<br />au chocolat,500,g,GAEL-Catalogue-400.jpg,77,1.3,0.8,11.2,9.5,3.9,0.18,2.6,-3,Dairies
+3542,1.49,1.19,1.47,1,A,Desserts lactés aromatisés,4 Pots de mousse aux fruits 0% MG<br />&nbsp;,460,g,Label2-72.jpg,52,0,0,5.2,3.3,7.1,0.08,1.3,-5,Dairies
+3573,1.49,1.34,1.48,1,B,Desserts lactés aromatisés,4 Yaourts aux fruits<br />au bifidus 0% MG,500,g,GAEL-Catalogue-394.jpg,98,3.3,2.13,13.4,8.8,3.5,0.13,0,2,Dairies
+3553,1.7,1.36,1.68,1,A,Desserts lactés aromatisés,8 Yaourts aux fruits jaunes 0% MG<br />&nbsp;,1000,g,GAEL-Catalogue-748.jpg,42,0.1,0.1,5.2,4.9,4,0.16,0.3,-1,Dairies
+3583,1.19,0.95,1.17,1,A,Desserts lactés aromatisés,4 Yaourts au citron 0% MG<br />&nbsp;,500,g,Label2-71.jpg,41,0.1,0.04,6,5.2,3.9,0.17,0.1,-1,Dairies
+3564,1.7,1.7,1.7,1,C,Desserts lactés aromatisés,4 Yaourts saveur citron<br />&nbsp;,500,g,GAEL-Catalogue-827.jpg,97,3,2,13.6,13.5,3.1,0.12,0,3,Dairies
+3541,1.04,1.04,1.04,1,C,Desserts lactés aromatisés,4 Yaourts à la fraise<br />&nbsp;,500,g,Label2-68.jpg,93,2.6,1.7,12.9,12.6,3.2,0.14,0.2,3,Dairies
+3699,0.86,0.95,0.87,1,D,Fromages,Fromage nature à tartiner<br />&nbsp;,150,g,GAEL-Catalogue-417.jpg,252,25,16,3,3,4.5,1,0,17,Dairies
+3644,1.52,1.37,1.51,1,B,Fromages,8 Carrés frais nature 0% MG<br />&nbsp;,200,g,Label2-83.jpg,78,0.2,0.1,1.5,1.5,17.5,1.5,0,1,Dairies
+3627,3.45,3.8,3.46,1,D,Fromages,Fromage pour raclette sans croûte<br />&nbsp;,400,g,Label2-48.jpg,349,28,19.1,0.7,0,24,1.6,0,20,Dairies
+3625,3.23,3.55,3.24,1,D,Fromages,Emmental Français<br />&nbsp;,450,g,GAEL-Catalogue-410.jpg,364,28,19.6,0,0,28,0.5,0,16,Dairies
+3614,2.75,3.03,2.76,1,D,Fromages,Comté AOC Affiné 6 mois<br />&nbsp;,250,g,GAEL-Catalogue-412.jpg,410,34,24,0,0,26,1,0,19,Dairies
+3633,1.75,1.75,1.75,1,C,Fromages,Bûche de chèvre Sainte Maure<br />&nbsp;,200,g,GAEL-Catalogue-414.jpg,242,13.7,6.8,2.6,1.1,27,1.5,7.4,10,Dairies
+3673,1.4,1.4,1.4,1,C,Fromages,Camembert allégé <br />&nbsp;,250,g,GAEL-Catalogue-672.jpg,197,11,7.7,1,0.1,23.5,1.5,0,15,Dairies
+3694,1.34,1.47,1.35,1,D,Fromages,Camembert<br />&nbsp;,250,g,GAEL-Catalogue-674.jpg,278,22,16,0,0,20,1.3,0,18,Dairies
+3649,1.33,1.46,1.34,1,D,Fromages,Brie<br />&nbsp;,200,g,GAEL-Catalogue-676.jpg,324,28,19.6,0.9,0,17,1.4,0,20,Dairies
+3736,0.72,0.65,0.71,1,B,Pains et Brioches,Pain de mie longue conservation<br />&nbsp;,250,g,Label2-25.jpg,287,5,0.5,53,5,7.5,1.25,3,1,Cereals&Potatoes
+3719,0.82,0.66,0.8,1,A,Pains et Brioches,Pain de mie complet<br />&nbsp;,550,g,Label2-26.jpg,238,3.5,0.5,39,4.6,9,1.1,4.2,-3,Cereals&Potatoes
+3791,1.24,0.99,1.22,1,A,Pains et Brioches,Pain de mie 7 céréales<br />&nbsp;,550,g,GAEL-Catalogue-424.jpg,290,7.7,0.6,43,5.4,10,1.13,4.5,-2,Cereals&Potatoes
+3760,1,1,1,0,B,Pains et Brioches,Baguette traditionnelle<br />&nbsp;,250,g,GAEL_Label4-015.jpg,286,1.47,0.1,56.6,2.12,9.33,1.7,3.02,1,Cereals&Potatoes
+3717,1.5,1.5,1.5,0,A,Pains et Brioches,Pain complet<br />&nbsp;,300,g,Label2-92.jpg,255,1.9,0.3,46,1.6,9.2,1.09,5.6,-3,Cereals&Potatoes
+3726,1.42,1.42,1.42,1,C,Pains et Brioches,Biscottes<br />&nbsp;,300,g,GAEL-Catalogue-431.jpg,410,8.6,1.9,67,7.1,13,1.6,3.3,9,Cereals&Potatoes
+3744,0.96,1.06,0.97,1,D,Pains et Brioches,10 Pains au lait<br />&nbsp;,350,g,GAEL-Catalogue-434.jpg,349,11,3.7,54,13,7.7,1.2,1.8,12,Cereals&Potatoes
+3735,1.67,1.84,1.68,1,D,Pains et Brioches,Brioche tranchée<br />aux pépites de chocolat,500,g,Label2-131.jpg,364,14,3.5,49,15,8.7,1.1,2.5,11,Cereals&Potatoes
+3722,1.26,1.01,1.24,1,A,Pains et Brioches,Pain croustillant farine complète<br />riche en fibres,230,g,GAEL-Catalogue-436.jpg,332,5.5,1,42.5,0,13.5,1.25,24,-1,Cereals&Potatoes
+3877,1.01,1.11,1.02,1,D,"Viennoiseries, gâteaux",Pain d'épices <br />&nbsp;,470,g,Label2-91.jpg,310,0.9,0.1,71,42,3.1,0.71,3.8,10,Snacks&Sweets
+3875,1.71,1.88,1.72,1,D,"Viennoiseries, gâteaux",10 Croissants<br />&nbsp;,400,g,GAEL-Catalogue-443.jpg,397,20,11,46,9.6,6.6,1.5,3.1,18,Snacks&Sweets
+3895,3.29,3.95,3.31,1,E,"Viennoiseries, gâteaux",Quatre quarts breton<br />&nbsp;,800,g,GAEL-Catalogue-445.jpg,437,25,15,47,27,5.5,1.2,1,24,Snacks&Sweets
+3816,1.33,1.46,1.34,1,D,"Viennoiseries, gâteaux",10 Pancakes<br />&nbsp;,350,g,Label2-118.jpg,355,16.1,1.7,46.3,28.3,5.7,1.45,1.5,15,Snacks&Sweets
+3871,2.63,2.89,2.64,1,D,"Viennoiseries, gâteaux",Brioche fourrée<br />à la crème pâtissière,600,g,Label2-119.jpg,275,6.9,3.5,47.4,20.9,5.4,0.7,0,13,Snacks&Sweets
+3810,1.69,2.03,1.71,1,E,"Viennoiseries, gâteaux",Cake marbré<br />&nbsp;,300,g,Label2-129.jpg,448,25,11.5,49,30.9,6.1,0.64,1.2,22,Snacks&Sweets
+3845,1.57,1.88,1.59,1,E,"Viennoiseries, gâteaux",8 Pains au chocolat<br />&nbsp;,360,g,GAEL-Catalogue-449.jpg,430,23.8,15.9,46.2,16.3,6.8,0.97,2.2,19,Snacks&Sweets
+3899,1.85,2.22,1.87,1,E,"Viennoiseries, gâteaux",8 Brownies au chocolat<br />pépites de chocolat,240,g,Label2-86.jpg,453,24,9.6,52,41,6.2,0.35,3.5,20,Snacks&Sweets
+3990,1.47,1.62,1.48,1,D,Barres chocolatées ou de céréales,6 Barres de céréales raisins<br />et chocolat au lait,125,g,Label2-36.jpg,401,9.9,5.4,69,31,6.7,0.55,4.8,13,Snacks&Sweets
+3930,2.4,2.64,2.41,1,D,Barres chocolatées ou de céréales,6 Barres de céréales<br />aux fruits rouges,129,g,GAEL-Catalogue-483.jpg,380,3.9,1.8,81,35,4.7,0.58,2.7,11,Snacks&Sweets
+3917,1.49,1.64,1.5,1,D,Barres chocolatées ou de céréales,6 Barres de céréales au chocolat<br />&nbsp;,208,g,GAEL-Catalogue-486.jpg,415,16,8.4,64,23,5.5,0.33,4.9,14,Snacks&Sweets
+3981,2.74,3.29,2.76,1,E,Barres chocolatées ou de céréales,10 Génoises au chocolat<br />fourrées cacao,420,g,Label2-127.jpg,474,29.2,16.9,45.1,37.3,5.4,0.25,0,24,Snacks&Sweets
+3937,3.02,3.62,3.04,1,E,Barres chocolatées ou de céréales,6 Barres chocolatées fourrées<br />au lait et aux noisettes,258,g,Label2-126.jpg,572,37.3,17.3,49.5,41.2,8.6,0.27,0,27,Snacks&Sweets
+3940,3.05,3.66,3.07,1,E,Barres chocolatées ou de céréales,10 Barres chocolatées au caramel<br />&nbsp;,450,g,Label2-128.jpg,449,16.6,8.3,70.2,61.7,4.1,0.42,0,24,Snacks&Sweets
+3914,4.4,5.28,4.42,1,E,Barres chocolatées ou de céréales,15 Barres au chocolat<br />au lait et aux céréales,350,g,Label2-81.jpg,561,33.8,21.9,54.9,49.1,8.6,0.28,1.3,26,Snacks&Sweets
+3911,1.64,1.97,1.66,1,E,Barres chocolatées ou de céréales,10 Barres de chocolat au lait<br />fourrées à la noix de coco,285,g,GAEL-Catalogue-492.jpg,488,26,21.4,58.5,47.8,3.8,0.26,1.6,25,Snacks&Sweets
+3954,1.81,2.17,1.83,1,E,Barres chocolatées ou de céréales,"6 Barres fourrées chocolat au<br />lait, caramel, cacahuètes grillées",300,g,GAEL-Catalogue-494.jpg,483,22.8,8.3,60.2,51.6,8.6,0.63,1.3,25,Snacks&Sweets
+4032,1.11,1.33,1.13,1,E,Biscuits,Biscuits spéculoos<br />&nbsp;,180,g,GAEL-Catalogue-456.jpg,484,19,8.8,72.7,38.1,4.9,0.92,5,21,Snacks&Sweets
+4078,1.1,1.21,1.11,1,D,Biscuits,Biscuits goût chocolat <br />&nbsp;,300,g,Label2-28.jpg,465,17.5,5.8,68,32,6.5,0.57,4.2,14,Snacks&Sweets
+4022,1.38,1.66,1.4,1,E,Biscuits,Galette au beurre<br />&nbsp;,150,g,GAEL-Catalogue-461.jpg,491,21,15,68,26,6.5,0.8,2,22,Snacks&Sweets
+4045,0.86,1.03,0.88,1,E,Biscuits,Petits beurres<br />&nbsp;,200,g,GAEL-Catalogue-464.jpg,440,12,7.6,73,23,8,1.4,3,19,Snacks&Sweets
+4028,1.85,2.04,1.86,1,D,Biscuits,"Biscuits aux céréales, abricots<br />amandes et pépites de chocolat",400,g,GAEL-Catalogue-828.jpg,474,20,9,63,27,8,0.78,5,16,Snacks&Sweets
+4088,1.59,1.91,1.61,1,E,Biscuits,Biscuits aux céréales<br />nappés au chocolat,200,g,GAEL-Catalogue-470.jpg,495,23.5,12.3,62.2,29,6.7,0.99,1,25,Snacks&Sweets
+4057,3.26,3.59,3.27,1,D,Biscuits,Madeleines<br />&nbsp;,700,g,GAEL-Catalogue-472.jpg,453,21,2,59,29,6,0.78,2,13,Snacks&Sweets
+4014,1.55,1.86,1.57,1,E,Biscuits,Cookies aux deux chocolats<br />&nbsp;,200,g,Label2-27.jpg,498,26,14,59,38,6.2,0.59,3.4,22,Snacks&Sweets
+4060,1.76,1.76,1.76,1,C,Biscuits,Biscuits allégés aux céréales<br />pépites de chocolat,300,g,Label2-24.jpg,435,14,2,66,17,8.1,0.88,6.8,7,Snacks&Sweets
+4186,2.9,3.19,2.91,1,D,Céréales pour le petit déjeuner,Maïs soufflé au miel<br />&nbsp;,400,g,Label2-97.jpg,383,1,0.2,88,28,5,0.83,1,12,Cereals&Potatoes
+4145,2.03,1.83,2.02,1,B,Céréales pour le petit déjeuner,Pétales de maïs<br />&nbsp;,500,g,GAEL-Catalogue-500.jpg,378,0.9,0.2,84,8,7,1.13,3,1,Cereals&Potatoes
+4159,2.07,2.28,2.08,1,D,Céréales pour le petit déjeuner,Riz soufflé au chocolat<br />&nbsp;,375,g,GAEL-Catalogue-834.jpg,385,2.5,0.9,84,35,5.7,0.73,2,12,Cereals&Potatoes
+4139,2.55,2.55,2.55,1,C,Céréales pour le petit déjeuner,Céréales au son de blé<br />&nbsp;,500,g,Label2-95.jpg,334,3.5,0.7,48,18,14,0.95,27,6,Cereals&Potatoes
+4182,3.92,3.92,3.92,1,C,Céréales pour le petit déjeuner,Blé soufflé au miel et sucré<br />&nbsp;,1,kg,GAEL-Catalogue-842.jpg,395,3.5,1,80.6,40.4,7.9,0.01,4.9,8,Cereals&Potatoes
+4185,2.31,1.85,2.29,1,A,Céréales pour le petit déjeuner,Céréales croustillantes<br />aux fruits rouges,400,g,GAEL-Catalogue-839.jpg,429,14,2,61,3.5,9,0.1,17,-4,Cereals&Potatoes
+4146,1.96,1.96,1.96,1,C,Céréales pour le petit déjeuner,Céréales chocolatées fourrées<br />au chocolat noisettes,400,g,Label2-96.jpg,444,3.6,0.9,22,8.7,1.9,0.18,2.1,3,Cereals&Potatoes
+4194,4.05,4.05,4.05,1,C,Céréales pour le petit déjeuner,Céréales croustillantes complètes<br />aux fruits secs,750,g,GAEL-Catalogue-514.jpg,369,5,0.9,68,24,9,0.75,8,7,Cereals&Potatoes
+4169,1.89,2.08,1.9,1,D,Céréales pour le petit déjeuner,Céréales croustillantes<br />au chocolat noir,500,g,GAEL-Catalogue-517.jpg,475,21,5.5,61,25,7,0.58,7,12,Cereals&Potatoes
+4283,2.69,3.23,2.71,1,E,Produits à tartiner,Pâte à tartiner au chocolat<br />et noisettes,400,g,GAEL-Catalogue-520.jpg,546,31.6,11,57.6,56.7,6,0.11,3.4,22,Snacks&Sweets
+4274,2.62,3.14,2.64,1,E,Produits à tartiner,Pâte à tartiner spéculoos<br />&nbsp;,400,g,Label2-123.jpg,572,35.7,7.7,58.8,36.2,3.4,0.6,0.9,23,Snacks&Sweets
+4272,3.66,3.66,3.66,0,D,Produits à tartiner,Miel<br />&nbsp;,500,g,GAEL-Catalogue-681.jpg,327,0.07,0,81.1,79.1,0.4,0.01,0.07,14,Snacks&Sweets
+4281,5.6,5.6,5.6,0,D,Produits à tartiner,Miel l'apiculteur de nos terroir<br />&nbsp;,500,g,GAEL_Label4-006.jpg,327,0.07,0,81.1,79.1,0.4,0.01,0.07,14,Snacks&Sweets
+4285,1.32,1.32,1.32,1,C,Produits à tartiner,Confiture de reines claudes<br />allégée en sucre,340,g,Label2-42.jpg,164,0,0,39,39,0,0.02,1.5,7,Snacks&Sweets
+4247,3.44,3.44,3.44,1,C,Produits à tartiner,4 Pots de crème de marrons<br />&nbsp;,400,g,GAEL-Catalogue-683.jpg,270,0.8,0.2,63.9,50.2,1.3,0.01,1.9,9,Snacks&Sweets
+4225,1.66,1.83,1.67,1,D,Produits à tartiner,Confiture de quetsches<br />&nbsp;,370,g,Label2-43.jpg,241,0.1,0,59,59,0.4,0,1.3,11,Snacks&Sweets
+4260,1.18,1.18,1.18,1,C,Produits à tartiner,Confiture de fraises<br />&nbsp;,370,g,GAEL-Catalogue-526.jpg,241,0.1,0,59,59,0.4,0,17,7,Snacks&Sweets
+4239,2.6,2.08,2.58,1,A,Produits à tartiner,Confiture de fraises<br />sans sucres ajoutés,320,g,GAEL-Catalogue-685.jpg,79,0,0,13,3.2,0.6,0.03,14,-6,Snacks&Sweets
+4339,1.47,1.62,1.48,1,D,Chocolat,Chocolat au lait fondant<br />&nbsp;,100,g,GAEL-Catalogue-528.jpg,500,37,23.5,54,10.5,4.6,0.28,1.8,17,Snacks&Sweets
+4347,3.1,3.72,3.12,1,E,Chocolat,Chocolat blanc aux noisettes<br />&nbsp;,200,g,GAEL-Catalogue-530.jpg,565,36,13.5,42.5,40.5,7,0.28,4.9,22,Snacks&Sweets
+4312,2.89,3.47,2.91,1,E,Chocolat,Chocolat à la pâte d'amande<br />&nbsp;,150,g,GAEL_Label4-005.jpg,506,29.8,13.7,50.1,47.4,6.7,0.01,5.2,21,Snacks&Sweets
+4348,0.89,1.07,0.91,1,E,Chocolat,Chocolat au lait et aux noisettes<br />&nbsp;,100,g,Label2-55.jpg,562,38,16,45,45,8.7,0.25,2.7,24,Snacks&Sweets
+4361,0.92,1.1,0.94,1,E,Chocolat,Chocolat au lait<br />&nbsp;,100,g,GAEL-Catalogue-542.jpg,530,29.5,17.5,58.5,57.5,6.4,0.43,1.8,25,Snacks&Sweets
+4322,0.97,1.07,0.98,1,D,Chocolat,Chocolat extra noir 80 %<br />&nbsp;,80,g,GAEL-Catalogue-688.jpg,631,53,32,25,21,8.2,0.03,10,16,Snacks&Sweets
+4366,0.93,1.02,0.94,1,D,Chocolat,"Chocolat noir bio, 74% cacao<br />&nbsp;",100,g,Label2-56.jpg,569,42,26,32,27,9.6,0.03,12,17,Snacks&Sweets
+4391,1.53,1.84,1.55,1,E,Chocolat,Chocolat au lait extra fin<br />&nbsp;,100,g,Label2-54.jpg,567,37,23,55,51,6.4,0.28,3,24,Snacks&Sweets
+4385,4.1,4.92,4.12,1,E,Chocolat,7 Bouchées de chocolat noir<br />fourrées de praliné noisette,245,g,GAEL-Catalogue-540.jpg,570,37.5,16.5,50.5,47.5,5.2,0.28,5,23,Snacks&Sweets
+4482,1.09,0.87,1.07,1,A,Desserts aux fruits,4 Compotes pomme banane<br />&nbsp;,400,g,Label2-61.jpg,74,0,0,18,14,0,0,1.4,-3,Fruits
+4448,1.57,1.26,1.55,1,A,Desserts aux fruits,8 Compotes aux 3 pommes<br />&nbsp;,800,g,Label2-59.jpg,81,0.1,0,20,14,0.1,0,1.3,-2,Fruits
+4431,1.07,0.86,1.05,1,A,Desserts aux fruits,4 Compotes pomme poire<br />sans sucres ajoutés,400,g,Label2-60.jpg,56,0.5,0.1,12.5,10.3,0.4,0,2.5,-6,Fruits
+4413,1.27,1.02,1.25,1,A,Desserts aux fruits,4 Compotes de pomme nature<br />&nbsp;,400,g,GAEL-Catalogue-694.jpg,70,0.1,0,16,13,0.3,0,2,-5,Fruits
+4417,2.99,2.39,2.97,1,A,Desserts aux fruits,Smoothie fraise et banane<br />&nbsp;,750,ml,GAEL-Catalogue-699.jpg,54,0,0,12,10,0.6,0,0.6,-3,Fruits
+4422,1.32,1.06,1.3,1,A,Desserts aux fruits,Ananas en tranches<br />&nbsp;,340,g,Label2-39.jpg,56,0,0,13,11,0.4,0,1,-4,Fruits
+4433,1.2,1.08,1.19,1,B,Desserts aux fruits,Oreillons d'abricots<br />&nbsp;,410,g,GAEL-Catalogue-549.jpg,55,0,0,13,12,0,0.03,1,0,Fruits
+4490,2.85,2.28,2.83,1,A,Desserts aux fruits,3 Coupelles de fruits<br />en morceaux au sirop léger,405,g,GAEL-Catalogue-552.jpg,62,0.1,0,14.5,11.7,0.3,0,1.6,-1,Fruits
+4526,0.87,0.87,0.87,1,C,Jus et nectars d'agrumes,Nectar d'orange<br />à base de jus concentré,1.5,L,Label2-9.jpg,20,0.5,0.1,4.4,4.1,0.5,0.03,0,0,Fruits
+4539,3.08,2.77,3.07,1,B,Jus et nectars d'agrumes,Jus d'orange sanguine<br />&nbsp;,1,L,GAEL-Catalogue-705.jpg,52,0,0,10.4,10.4,0.6,0,0.8,-4,Fruits
+4559,2.36,2.12,2.35,1,B,Jus et nectars d'agrumes,Pur jus d'orange<br />&nbsp;,1,L,GAEL_Label4-019.jpg,50,0,0,12,12,0.5,0,0.5,-3,Fruits
+4553,1.97,1.77,1.96,1,B,Jus et nectars d'agrumes,Pur jus 3 agrumes<br />&nbsp;,1,L,GAEL-Catalogue-710.jpg,42,0,0,9.9,9,0.7,0.01,0,-4,Fruits
+4584,1.92,1.73,1.91,1,B,Jus et nectars d'agrumes,Jus de pamplemousse rose<br />&nbsp;,1,L,GAEL-Catalogue-568.jpg,39,0,0,7.6,7.6,0.5,0,0.3,-4,Fruits
+4557,1.35,1.22,1.34,1,B,Jus et nectars d'agrumes,Pur jus d'orange sans pulpe<br />&nbsp;,1,L,Label2-14.jpg,44,0,0,9.4,8.7,0.7,0,0,-4,Fruits
+4723,1.89,2.08,1.9,1,D,Boissons fruitées,Boisson aux extraits de fruits<br />&nbsp;,1.25,L,GAEL-Catalogue-755.jpg,34,0,0,8,7.9,0,0.01,0,1,Fruits
+4734,2.99,3.29,3,1,D,Boissons fruitées,Boisson à base de jus de citron<br />et de menthe,1,L,Label2-116.jpg,36,0,0,8.9,8.3,0.1,0,0,1,Fruits
+4757,1.73,1.9,1.74,1,D,Boissons fruitées,Boisson pomme framboise cassis <br />&nbsp;,2,L,Label2-115.jpg,39,0,0,9.5,9.4,0,0.01,0,2,Fruits
+4753,1.58,1.74,1.59,1,D,Boissons fruitées,Boisson aux extraits de thé<br />aromatisée à la pêche,1.5,L,GAEL-Catalogue-899.jpg,30,0,0,7,6.9,0,0.01,0,1,Fruits
+4799,1.65,1.65,1.65,1,C,Boissons fruitées,"Boisson aux extraits de thé<br />aromatisée à la pêche, light",1.5,L,GAEL-Catalogue-585.jpg,1,0,0,0.5,0.5,0,0.03,0,0,Fruits
+4529,2.69,2.42,2.68,1,B,Jus et nectars de fruits variés,Pur jus de pomme<br />&nbsp;,1,L,GAEL_Label4-016.jpg,51,0,0,12,10.6,0.1,0,0.6,-3,Fruits
+4564,1.8,1.62,1.79,1,B,Jus et nectars de fruits variés,Jus de carotte bio<br />&nbsp;,1,L,Label2-19.jpg,33,0,0,7.5,7.3,0.5,0.1,0.6,-4,Fruits
+4560,1.83,1.83,1.83,1,C,Jus et nectars de fruits variés,Jus de raisin bio<br />&nbsp;,1,L,Label2-4-2.jpg,66,0.3,0,16,16,0.5,0.02,0.2,-2,Fruits
+4728,1.8,1.62,1.79,1,B,Jus et nectars de fruits variés,Nectar de mangue<br />&nbsp;,1,L,GAEL_Label4-007.jpg,51,0.5,0,12,10,0.5,0.03,0.5,1,Fruits
+4731,2.17,2.39,2.18,1,D,Jus et nectars de fruits variés,Nectar multivitaminé<br />à base de jus et de purée,2,L,GAEL-Catalogue-713.jpg,45,0,0,10.6,10.3,0,0,0.6,2,Fruits
+4749,1.79,1.97,1.8,1,D,Jus et nectars de fruits variés,"Nectar à base de concentré<br />d'orange, carotte et citron",750,ml,GAEL-Catalogue-902.jpg,44,0.5,0.5,10,10,0.5,0,0,2,Fruits
+4732,1.63,1.79,1.64,1,D,Jus et nectars de fruits variés,Nectar de poire<br />&nbsp;,1,L,Label2-117.jpg,47,0,0,11.5,10.4,0,0.03,0,1,Fruits
+4644,1.29,1.55,1.31,1,E,Sodas,Boisson gazeuse au cola<br />&nbsp;,1.5,L,GAEL-Catalogue-570.jpg,42,0,0,10.6,10.6,0,0,0,2,Snacks&Sweets
+4615,1.29,1.16,1.28,1,B,Sodas,Boisson gazeuse light au cola<br />&nbsp;,1.5,L,GAEL-Catalogue-572.jpg,0.2,0,0,0,0,0,0,0,0,Snacks&Sweets
+4650,3.76,4.51,3.78,1,E,Sodas,12 Canettes de boisson<br />gazeuse au cola,12*15,cL,GAEL-Catalogue-857.jpg,42,0,0,10.6,10.6,0,0,0,2,Snacks&Sweets
+4613,1.75,1.75,1.75,1,C,Sodas,Boisson gazeuse light à l'orange<br />&nbsp;,1.5,L,GAEL_Label4-009.jpg,7.6,0,0,1.4,1.2,0.1,0.01,0,0,Snacks&Sweets
+4611,4.05,4.86,4.07,1,E,Sodas,8 Bouteilles de boisson<br />gazeuse à l'orange,8*25,cL,GAEL-Catalogue-895.jpg,42,0,0,10.1,10.1,0.1,0.01,0,2,Snacks&Sweets
+4625,0.94,1.03,0.95,1,D,Sodas,Boisson gazeuse<br />citron et citron vert,1.5,L,Label2-13.jpg,28,0,0,6.6,6.6,0,0,0,1,Snacks&Sweets
+4671,1.24,1.24,1.24,1,C,Sodas,Boisson gazeuse<br />light aux agrumes ,1.5,L,Label2-11.jpg,2,0.5,0,0.3,0.2,0.5,0.01,0,0,Snacks&Sweets
+4621,1.71,1.54,1.7,1,B,Sodas,Boisson gazeuse light<br />aux écorces de quinquina,1.5,L,GAEL_Label4-008.jpg,1.4,0,0,0,0,0,0,0,0,Snacks&Sweets
+4645,1.47,1.62,1.48,1,D,Sodas,Boisson gazeuse aux agrumes<br />&nbsp;,1.5,L,Label2-10.jpg,28,0,0,6.6,6.6,0,0,0,1,Snacks&Sweets
