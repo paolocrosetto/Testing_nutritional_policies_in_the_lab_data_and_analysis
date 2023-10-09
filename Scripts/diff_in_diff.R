@@ -125,8 +125,5 @@ modelsummary(list("ScoreFSA" = reg_FSA,
                            output = "Tables/regression_table.tex",
                            title = "Difference-in-difference fixed-effect regression results. Standard error clustered by subject.")
 
-## cleaning up
-rm(cp)
-rm(table, tests, nice_table)
-rm(reg_exp, reg_FSA, regdf)
-rm(glance)
+
+

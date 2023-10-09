@@ -107,24 +107,25 @@ sink()
 
 ### PLOT
 
+## Figure 4: simple plot of the coefficients and conf int from the regression 
+## export for plot
+summary_FSA <- reg_FSA %>% 
+  tidy(conf.int = T) %>% 
+  mutate(indicator = "Δ scoreFSA") %>% 
+  filter(str_detect(term, "caddy2")) 
 
-## Figure 4: simple plot with errorbars and not much more
-summary <- glance %>% 
-  group_by(treatment, policy, indicator) %>%
-  summarise(diffsem = sd(diff, na.rm = TRUE)/sqrt(n()),
-            diff = round(mean(diff, na.rm = TRUE),2)) %>% 
-  mutate(cil = diff-2*diffsem, cih = diff + 2*diffsem) %>% 
-  mutate(label = treatment != "Neutre2016") %>% 
-  mutate(policy = fct_relevel(policy, "Benchmarks", "Label", "Price")) %>% 
-  group_by(label) %>% 
-  mutate(avgeff = case_when(
-    label == T ~  mean(diff),
-    label == F ~  NA_real_))
+summary_exp <- reg_exp %>% 
+  tidy(conf.int = T) %>% 
+  mutate(indicator = "Δ expenditure") %>% 
+  filter(str_detect(term, "caddy2"))
 
-summary %>%
+summary_FSA %>% 
+  bind_rows(summary_exp) %>% 
   ggplot() + 
-  geom_errorbar(aes(x = reorder(treatment, diff), ymin = cil, ymax = cih, group= reorder(treatment,-diff)), size=0.6, width = 0.1, position = position_dodge(width = 0.07), color = "grey30")+
-  geom_point(aes(reorder(treatment, diff), diff, fill = indicator), size=5, pch=21)+
+  geom_errorbar(aes(x = reorder(term, estimate), ymin = conf.low, ymax = conf.high,
+                    group= reorder(term,estimate)), size=0.6, width = 0.1, 
+                position = position_dodge(width = 0.07), color = "grey30")+
+  geom_point(aes(reorder(term, estimate), estimate, fill = term), size=5, pch=21)+
   coord_flip()+
   geom_hline(yintercept = 0, color="indianred", linetype = "dashed")+
   labs(x = "", y = "Policy-induced change -- mean and 95% c.i.")+
@@ -136,7 +137,7 @@ summary %>%
         strip.text.x = element_text(face = "bold", size = 20),
         strip.text.y = element_text(face = "bold"),
         axis.text.y = element_text(size = 14))+
-  facet_grid(policy~indicator, scales = "free", space = "free_y")
+  facet_grid(.~indicator, scales = "free", space = "free_y")
 ggsave("Figures/at_a_glance_means_CI.png",
        width = 13/1.1, height = 8/1.1, units = "in", dpi = 300)
 

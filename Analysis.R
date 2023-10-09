@@ -44,11 +44,13 @@ source("Scripts/catalog_analysis.R")
 
 ## confirmatory analyses
 
-## At a glance: FSA and expenditure deltas
-source("Scripts/at_a_glance.R")
 
 ## Regression with fixest + linear hp testing from regression
 source("Scripts/diff_in_diff.R")
+
+## At a glance: FSA and expenditure deltas
+source("Scripts/at_a_glance.R")
+
 
 ## differential impact by revenue
 source("Scripts/regressive.R")
