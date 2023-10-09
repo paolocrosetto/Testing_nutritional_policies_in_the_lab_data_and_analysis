@@ -103,11 +103,11 @@ car::linearHypothesis(reg_exp, "caddy2:treatmentNutriScore - caddy2:treatmentNS 
 
 ## export regressions to latex
 
-modelsummary(list("Δ scoreFSA" = reg_FSA, 
-                                "Δ expenditure" = reg_exp),
+modelsummary(list("ScoreFSA" = reg_FSA, 
+                                "Expenditure" = reg_exp),
                            fmt = "%.3f",
                            estimate = "{estimate} ({std.error}){stars}",
-                           statistic = "conf.int",
+                           statistic = NULL,
                            coef_rename = c("caddy2" = "Cart 2: Benchmark", 
                                            "(Intercept)" = "Cart 1: Benchmark",
                                            "treatmentNS2016" = "Cart 1 $\\times$ NutriScore 2016",
