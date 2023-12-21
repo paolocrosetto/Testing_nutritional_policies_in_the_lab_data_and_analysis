@@ -111,21 +111,43 @@ sink()
 ## export for plot
 summary_FSA <- reg_FSA %>% 
   tidy(conf.int = T) %>% 
-  mutate(indicator = "Δ scoreFSA") %>% 
+  mutate(indicator = "ScoreFSA") %>% 
   filter(str_detect(term, "caddy2")) 
 
 summary_exp <- reg_exp %>% 
   tidy(conf.int = T) %>% 
-  mutate(indicator = "Δ expenditure") %>% 
+  mutate(indicator = "Expenditure (€/2000kcal)") %>% 
   filter(str_detect(term, "caddy2"))
 
-summary_FSA %>% 
+plotme <- summary_FSA %>% 
   bind_rows(summary_exp) %>% 
+  mutate(term = as.factor(term)) %>% 
+  mutate(term = fct_recode(term, 
+                                "NutriScore 2016" = "caddy2:treatmentNS2016",
+                                "Benchmark 2016" = "caddy2",
+                                "NutriScore" = "caddy2:treatmentNutriScore",
+                                "NS + large price" = "caddy2:treatmentNS + large price",
+                                "NS + small price" = "caddy2:treatmentNS + small price",
+                                "Implicit price" = "caddy2:treatmentImplicit price",
+                                "Explicit price" = "caddy2:treatmentExplicit price")) %>% 
+  mutate(term = fct_relevel(term, "Benchmark 2016","NutriScore 2016", "NutriScore", "NS + small price", "NS + large price"),
+         term = fct_rev(term)) %>% 
+  mutate(indicator = as.factor(indicator), 
+         indicator = fct_relevel(indicator, "ScoreFSA")) %>% 
+  mutate(policy = case_when(term == "NutriScore" ~ "Label",
+                            term %in% c("NS + large price","NS + small price") ~ "Policy mix",
+                            term %in% c("Implicit price", "Explicit price") ~ "Price",
+                            term %in% c("NutriScore 2016","Benchmark 2016") ~ "Benchmarks")) %>% 
+  mutate(policy = as.factor(policy), 
+         policy = fct_relevel(policy, "Policy mix", "Price", "Label"),
+         policy = fct_rev(policy))
+
+plotme %>% 
   ggplot() + 
   geom_errorbar(aes(x = reorder(term, estimate), ymin = conf.low, ymax = conf.high,
                     group= reorder(term,estimate)), size=0.6, width = 0.1, 
                 position = position_dodge(width = 0.07), color = "grey30")+
-  geom_point(aes(reorder(term, estimate), estimate, fill = term), size=5, pch=21)+
+  geom_point(aes(reorder(term, estimate), estimate, fill = indicator), size=5, pch=21)+
   coord_flip()+
   geom_hline(yintercept = 0, color="indianred", linetype = "dashed")+
   labs(x = "", y = "Policy-induced change -- mean and 95% c.i.")+
@@ -137,7 +159,7 @@ summary_FSA %>%
         strip.text.x = element_text(face = "bold", size = 20),
         strip.text.y = element_text(face = "bold"),
         axis.text.y = element_text(size = 14))+
-  facet_grid(.~indicator, scales = "free", space = "free_y")
+  facet_grid(policy~indicator, scales = "free", space = "free_y")
 ggsave("Figures/at_a_glance_means_CI.png",
        width = 13/1.1, height = 8/1.1, units = "in", dpi = 300)
 
