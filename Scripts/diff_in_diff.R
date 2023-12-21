@@ -45,8 +45,18 @@ reg_FSA <- regdf %>%
 
 ## NUTRITION
 
+
+# 0.  vs benchmark
+car::linearHypothesis(reg_FSA, "caddy2:treatmentNS2016 - caddy2 = 0")
+car::linearHypothesis(reg_FSA, "caddy2:treatmentImplicit price - caddy2 = 0")
+car::linearHypothesis(reg_FSA, "caddy2:treatmentExplicit price - caddy2 = 0")
+car::linearHypothesis(reg_FSA, "caddy2:treatmentNS + small price - caddy2 = 0")
+car::linearHypothesis(reg_FSA, "caddy2:treatmentNS + large price - caddy2 = 0")
+
+
 # 1. 2016 vs 2019
-car::linearHypothesis(reg_FSA, "caddy2:treatmentNS2016 - caddy2:treatmentNutriScore = 0")
+car::linearHypothesis(reg_FSA, "treatmentNS2016 - treatmentNutriScore = 0") # caddy 1
+car::linearHypothesis(reg_FSA, "caddy2:treatmentNS2016 - caddy2:treatmentNutriScore = 0") # caddy 2
 
 # 2. implicit vs explicit
 car::linearHypothesis(reg_FSA, "caddy2:treatmentImplicit price - caddy2:treatmentExplicit price = 0")
@@ -57,14 +67,23 @@ car::linearHypothesis(reg_FSA, "caddy2:treatmentExplicit price - caddy2:treatmen
 # 4. labels vs implicit prices
 car::linearHypothesis(reg_FSA, "caddy2:treatmentImplicit price - caddy2:treatmentNutriScore = 0")
 
-# 5. labels vs label + large prices
+# 5a. labels vs label + large prices
 car::linearHypothesis(reg_FSA, "caddy2:treatmentNutriScore - caddy2:treatmentNS + large price = 0")
+
+# 5b. prices vs label + large prices
+car::linearHypothesis(reg_FSA, "caddy2:treatmentExplicit price - caddy2:treatmentNS + large price = 0")
 
 # 6. labels vs label + small prices
 car::linearHypothesis(reg_FSA, "caddy2:treatmentNutriScore - caddy2:treatmentNS + small price = 0")
 
+#6b. label + small prices vs large prices
+car::linearHypothesis(reg_FSA, "caddy2:treatmentExplicit price - caddy2:treatmentNS + small price = 0")
+
 # 7. small vs large prices
 car::linearHypothesis(reg_FSA, "caddy2:treatmentNS + small price - caddy2:treatmentNS + large price = 0")
+
+# 8. sub-additivity
+car::linearHypothesis(reg_FSA, "caddy2:treatmentNS + large price - caddy2:treatmentExplicit price + caddy2:treatmentNutriScore = 0")
 
 
 
