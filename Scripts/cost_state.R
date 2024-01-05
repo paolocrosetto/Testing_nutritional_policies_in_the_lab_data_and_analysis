@@ -82,9 +82,9 @@ plotme <- dfnut %>%
   left_join(dfexp)
 
 
-## Table 5 -- household benefits and gov't cost of different policies
+## Table 8 -- household benefits and gov't cost of different policies
 
-plotme %>% 
+export_table <- plotme %>% 
   mutate(treatment = fct_recode(treatment, "NutriScore" = "NS",
                                 "NS + large price" = "NS_pc_exp",
                                 "NS + small price" = "NS_ct_exp",
@@ -106,8 +106,15 @@ plotme %>%
                      )) %>% 
   add_header_above(c(" " = 1, 
                      "Household" = 1, 
-                     "Government" = 1)) %>% 
+                     "Government" = 1))
+
+
+# pdf export
+export_table %>% 
+  
+# tex export
+  export_table %>%   
   save_kable("Tables/Table_cost_benefit_with_HH.tex") 
 
 ## cleaning up
-rm(dfcost, dfexp, dfnut, plotme)
+rm(dfcost, dfexp, dfnut, plotme, export_table)
