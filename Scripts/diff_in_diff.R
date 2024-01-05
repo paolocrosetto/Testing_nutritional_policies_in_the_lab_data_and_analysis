@@ -141,8 +141,35 @@ modelsummary(list("ScoreFSA" = reg_FSA,
                                            "caddy2:treatmentNS + large price" = "Cart 2 $\\times$ NutriScore and large price change",
                                            "caddy2:treatmentNS + small price" = "Cart 2 $\\times$ NutriScore and small price change",
                                            "caddy2:treatmentNutriScore" = "Cart 2 $\\times$ NutriScore"),
-                           output = "Tables/regression_table.tex",
+                           output = "Tables/Table_3_regression.tex",
                            title = "Difference-in-difference fixed-effect regression results. Standard error clustered by subject.")
+
+# exporting same to pdf
+
+modelsummary(list("ScoreFSA" = reg_FSA, 
+                  "Expenditure" = reg_exp),
+             fmt = "%.3f",
+             estimate = "{estimate} ({std.error}){stars}",
+             statistic = NULL,
+             coef_rename = c("caddy2" = "Cart 2: Benchmark", 
+                             "(Intercept)" = "Cart 1: Benchmark",
+                             "treatmentNS2016" = "Cart 1 $\\times$ NutriScore 2016",
+                             "treatmentExplicit price" = "Cart 1 $\\times$ Explicit large price change",
+                             "treatmentImplicit price" = "Cart 1 $\\times$ Implicit large price change",
+                             "treatmentNS + large price" = "Cart 1 $\\times$ NutriScore and large price change",
+                             "treatmentNS + small price" = "Cart 1 $\\times$ NutriScore and small price change",
+                             "treatmentNutriScore" = "Cart 1 $\\times$ NutriScore",
+                             "caddy2:treatmentNS2016" = "Cart 2 $\\times$ NutriScore 2016",
+                             "caddy2:treatmentExplicit price" = "Cart 2 $\\times$ Explicit large price change",
+                             "caddy2:treatmentImplicit price" = "Cart 2 $\\times$ Implicit large price change",
+                             "caddy2:treatmentNS + large price" = "Cart 2 $\\times$ NutriScore and large price change",
+                             "caddy2:treatmentNS + small price" = "Cart 2 $\\times$ NutriScore and small price change",
+                             "caddy2:treatmentNutriScore" = "Cart 2 $\\times$ NutriScore"),
+             output = "Tables/Table_3.html",
+             title = "Difference-in-difference fixed-effect regression results. Standard error clustered by subject.") 
+
+webshot2::webshot(url = "Tables/Table_3.html", file = "Tables/Table_3.png", vwidth = 1500, vheight = 1800, zoom = 2)
+
 
 
 
