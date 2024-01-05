@@ -33,9 +33,9 @@ nice_table <- table %>%
   arrange(desc(treatment))
   
 
-## exporting into a clean latex table
-sink("Tables/change_NS.tex")
-nice_table %>% 
+## exporting into a clean latex and pdf tables
+
+export_table <- nice_table %>% 
   kbl(booktabs = T, 
       col.names = c("", "A", "B", "C", "D", "E", "None"), 
       align = "lrrrrrr",
@@ -49,6 +49,12 @@ nice_table %>%
   pack_rows("Labeling", 3, 3) %>%
   pack_rows("Policy mix", 4, 5) %>%
   pack_rows("Price policy", 6, 7) 
+
+export_table %>% 
+  save_kable("Tables/Table_7_change_NS.pdf")
+
+sink("Tables/Table_7_change_NS.tex")
+export_table
 sink()
 
 ## tests
