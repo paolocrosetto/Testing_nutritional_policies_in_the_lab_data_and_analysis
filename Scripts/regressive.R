@@ -31,8 +31,10 @@ nice_table <- focus %>%
                                treatment == "pc_imp"    ~ "Implicit price",
                                treatment == "pc_exp"    ~ "Explicit price"))
 
-sink(file = "Tables/net_subsidy.tex")
-nice_table %>% 
+## export to tex
+
+sink(file = "Tables/Table_4_net_subsidy.tex")
+subsidy_table <- nice_table %>% 
   ungroup() %>% 
   kbl(booktabs = T,
       format = "latex", 
@@ -42,7 +44,12 @@ nice_table %>%
   ) %>% 
   kable_styling(latex_options = c("hold_position", "scale_down"),
                 position = "center") 
+subsidy_table
 sink()
+
+## export to pdf
+subsidy_table %>% 
+  save_kable("Tables/Table_4_net_sub.pdf")
 
 ## distribution of subjects by income
 coarse_n <- focus %>% 
@@ -112,8 +119,8 @@ nice_table <- coarse %>%
          )
 
 ## saving to file the latex code of the table
-sink("Tables/income_gradient.tex")
-nice_table %>% 
+sink("Tables/Table_5_income_gradient.tex")
+income_table <- nice_table %>% 
   kbl(booktabs = T, 
       col.names = c("", "N", rep(c("Expenditure (€)","Net subsidy (€)","Share (%)"),2)), 
       align = "lrrrrrrr",
@@ -125,7 +132,12 @@ nice_table %>%
   add_header_above(c( " " = 2, "Small price change" = 3, "Large price change" = 3)) %>% 
   pack_rows("Coarse income level", 1, 3) %>% 
   pack_rows("Fine-grained income level", 4, 11)
+income_table
 sink()
+
+## export same table to pdf
+income_table %>% 
+  save_kable("Tables/Table_5_income.pdf")
 
 
 ### tests
@@ -199,3 +211,4 @@ finegrainedtest %>%
 rm(coarse, coarse_n, coarsetest)
 rm(finegrained, finegrained_n, finegrainedtest)
 rm(focus, n_tab, nice_table)
+rm(subsidy_table, income_table)
