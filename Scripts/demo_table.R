@@ -97,11 +97,11 @@ demotab <- demotab %>%
 
 # exporting to csv
 demotab %>% 
-  write_csv("Tables/demographics_by_treatment_with_test.csv")
+  write_csv("Tables/Table_2_demographics.csv")
 
 # creating good-looking latex table
-sink(file = "Tables/tab_demo_ALL.tex")
-demotab %>% 
+sink(file = "Tables/Table_2_demo.tex")
+final_table <- demotab %>% 
   ungroup() %>% 
   select(-variable) %>% 
   kbl(booktabs = T,
@@ -116,10 +116,17 @@ demotab %>%
   pack_rows("Gender", 7, 8) %>% 
   pack_rows("Income", 9,11) %>% 
   pack_rows("Profession", 12, 17) 
+final_table
 sink()
+
+# creating good-looking pdf table 
+final_table %>% 
+  save_kable("Tables/Table_2_demographics.pdf")
 
 ## cleaning up
 rm(demo)
 rm(demotab)
 rm(overall)
 rm(tests)
+rm(final_table)
+
