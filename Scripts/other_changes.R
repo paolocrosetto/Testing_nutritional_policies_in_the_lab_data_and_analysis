@@ -23,9 +23,8 @@ nice_table <- changes %>%
   summarise(across(where(is.numeric), ~round(mean(.x), 2))) %>% 
   select(treatment, N1 = Nitem_1, N2 = Nitem_2, diffN, p1 = avgprice_1, p2 = avgprice_2, diffp)
 
-# exporting to latex
-sink("Tables/change_all.tex")
-nice_table %>% 
+# exporting to latex and pdf
+export_table <- nice_table %>% 
   mutate(treatment = as.factor(treatment)) %>% 
   mutate(treatment = fct_recode(treatment, 
                                 "NutriScore 2016" = "NS2016",
@@ -51,6 +50,12 @@ nice_table %>%
   pack_rows("Labeling", 3, 3) %>%
   pack_rows("Policy mix", 4, 5) %>%
   pack_rows("Price policy", 6, 7) 
+
+export_table %>% 
+  save_kable("Tables/Table_6_price_changes.pdf")
+
+sink("Tables/Table_6_price_changes.tex")
+export_table
 sink()
 
 
