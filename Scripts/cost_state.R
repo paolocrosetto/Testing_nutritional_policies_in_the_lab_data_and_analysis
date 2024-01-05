@@ -111,10 +111,10 @@ export_table <- plotme %>%
 
 # pdf export
 export_table %>% 
-  
+  save_kable("Tables/Table_8_cost_benefit_with_HH.pdf") 
 # tex export
   export_table %>%   
-  save_kable("Tables/Table_cost_benefit_with_HH.tex") 
+  save_kable("Tables/Table_8_cost_benefit_with_HH.tex") 
 
 ## cleaning up
 rm(dfcost, dfexp, dfnut, plotme, export_table)
