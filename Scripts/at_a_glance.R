@@ -75,11 +75,11 @@ nice_table <- table %>%
 
 # 3b. exporting table as csv
 nice_table %>% 
-  write_csv("Tables/tab_at_a_glance_complete.csv")
+  write_csv("Tables/Table_B1_descriptive_stat_changes.csv")
   
-# 4. latex final formatting and export
-sink(file = "Tables/tab_at_a_glance_complete.tex")
-nice_table %>% 
+# 4. latex and pdf final formatting and export
+
+export_table <- nice_table %>% 
   mutate(treatment = fct_relevel(treatment, "Benchmark 2016", "NutriScore 2016", "NutriScore", "NS + small price", "NS + large price")) %>% 
   mutate("p.value_Δ expenditure" = case_when(`p.value_Δ expenditure` == 0.000 ~ "< 0.001",
                                              TRUE ~ as.character(`p.value_Δ expenditure`)),
@@ -101,6 +101,12 @@ nice_table %>%
   pack_rows("Price policy", 6, 7) %>% 
   footnote(general = "Means (standard deviations) for each variable. P-values from Wilcoxon signed-rank test of the difference between carts 1 and 2.", 
            general_title = "")
+
+export_table %>% 
+  save_kable("Tables/Table_B1_descriptive_stat_changes.pdf")
+
+sink(file = "Tables/Table_B1_descriptive_stat_changes.tex")
+export_table
 sink()
   
 
