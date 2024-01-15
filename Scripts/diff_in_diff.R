@@ -141,7 +141,7 @@ modelsummary(list("ScoreFSA" = reg_FSA,
                                            "caddy2:treatmentNS + large price" = "Cart 2 $\\times$ NutriScore and large price change",
                                            "caddy2:treatmentNS + small price" = "Cart 2 $\\times$ NutriScore and small price change",
                                            "caddy2:treatmentNutriScore" = "Cart 2 $\\times$ NutriScore"),
-                           output = "Tables/Table_3_regression.tex",
+                           output = "Tables/Table_4_regression.tex",
                            title = "Difference-in-difference fixed-effect regression results. Standard error clustered by subject.")
 
 # exporting same to pdf
@@ -165,10 +165,10 @@ modelsummary(list("ScoreFSA" = reg_FSA,
                              "caddy2:treatmentNS + large price" = "Cart 2 $\\times$ NutriScore and large price change",
                              "caddy2:treatmentNS + small price" = "Cart 2 $\\times$ NutriScore and small price change",
                              "caddy2:treatmentNutriScore" = "Cart 2 $\\times$ NutriScore"),
-             output = "Tables/Table_3.html",
+             output = "Tables/Table_4.html",
              title = "Difference-in-difference fixed-effect regression results. Standard error clustered by subject.") 
 
-webshot2::webshot(url = "Tables/Table_3.html", file = "Tables/Table_3.png", vwidth = 1500, vheight = 1800, zoom = 2)
+webshot2::webshot(url = "Tables/Table_4.html", file = "Tables/Table_4.png", vwidth = 1500, vheight = 1800, zoom = 2)
 
 
 

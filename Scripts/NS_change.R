@@ -51,9 +51,9 @@ export_table <- nice_table %>%
   pack_rows("Price policy", 6, 7) 
 
 export_table %>% 
-  save_kable("Tables/Table_7_change_NS.pdf")
+  save_kable("Tables/Table_8_change_NS.pdf")
 
-sink("Tables/Table_7_change_NS.tex")
+sink("Tables/Table_8_change_NS.tex")
 export_table
 sink()
 

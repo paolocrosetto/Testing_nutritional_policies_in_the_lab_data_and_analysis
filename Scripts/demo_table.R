@@ -97,10 +97,10 @@ demotab <- demotab %>%
 
 # exporting to csv
 demotab %>% 
-  write_csv("Tables/Table_2_demographics.csv")
+  write_csv("Tables/Table_3_demographics.csv")
 
 # creating good-looking latex table
-sink(file = "Tables/Table_2_demo.tex")
+sink(file = "Tables/Table_3_demo.tex")
 final_table <- demotab %>% 
   ungroup() %>% 
   select(-variable) %>% 
@@ -121,7 +121,7 @@ sink()
 
 # creating good-looking pdf table 
 final_table %>% 
-  save_kable("Tables/Table_2_demographics.pdf")
+  save_kable("Tables/Table_3_demographics.pdf")
 
 ## cleaning up
 rm(demo)

@@ -33,7 +33,7 @@ nice_table <- focus %>%
 
 ## export to tex
 
-sink(file = "Tables/Table_4_net_subsidy.tex")
+sink(file = "Tables/Table_5_net_subsidy.tex")
 subsidy_table <- nice_table %>% 
   ungroup() %>% 
   kbl(booktabs = T,
@@ -49,7 +49,7 @@ sink()
 
 ## export to pdf
 subsidy_table %>% 
-  save_kable("Tables/Table_4_net_sub.pdf")
+  save_kable("Tables/Table_5_net_sub.pdf")
 
 ## distribution of subjects by income
 coarse_n <- focus %>% 
@@ -119,7 +119,7 @@ nice_table <- coarse %>%
          )
 
 ## saving to file the latex code of the table
-sink("Tables/Table_5_income_gradient.tex")
+sink("Tables/Table_6_income_gradient.tex")
 income_table <- nice_table %>% 
   kbl(booktabs = T, 
       col.names = c("", "N", rep(c("Expenditure (€)","Net subsidy (€)","Share (%)"),2)), 
@@ -137,7 +137,7 @@ sink()
 
 ## export same table to pdf
 income_table %>% 
-  save_kable("Tables/Table_5_income.pdf")
+  save_kable("Tables/Table_6_income.pdf")
 
 
 ### tests
