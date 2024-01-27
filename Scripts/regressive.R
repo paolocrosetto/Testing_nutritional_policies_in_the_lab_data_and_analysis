@@ -17,6 +17,7 @@ focus <- focus %>%
 
 ## summarising over treatments first: on average subjects do get a subsidy from the gov't
 nice_table <- focus %>% 
+  filter(caddy == 2) %>% 
   group_by(subject, treatment) %>% 
   summarise(taxsub = sum(taxsub), 
             expenditure = sum(expenditure), 
@@ -33,7 +34,7 @@ nice_table <- focus %>%
 
 ## export to tex
 
-sink(file = "Tables/Table_5_net_subsidy.tex")
+sink(file = "Tables/Table_A2_net_subsidy.tex")
 subsidy_table <- nice_table %>% 
   ungroup() %>% 
   kbl(booktabs = T,
@@ -49,7 +50,7 @@ sink()
 
 ## export to pdf
 subsidy_table %>% 
-  save_kable("Tables/Table_5_net_sub.pdf")
+  save_kable("Tables/Table_A2_net_sub.pdf")
 
 ## distribution of subjects by income
 coarse_n <- focus %>% 
@@ -66,6 +67,7 @@ n_tab <- coarse_n %>% bind_rows(finegrained_n)
 
 ## income gradient of net subsidies: income
 finegrained <- focus %>% 
+  filter(caddy == 2) %>% 
   mutate(condition = case_when(treatment == "NS_ct_exp" ~ "small price change",
                                TRUE ~ "large price change")) %>% 
   group_by(subject, income = income, condition) %>% 
@@ -82,6 +84,7 @@ finegrained <- focus %>%
 
 ## income gradient of net subsidies: income2
 coarse <- focus %>% 
+  filter(caddy == 2) %>% 
   mutate(condition = case_when(treatment == "NS_ct_exp" ~ "small price change",
                                TRUE ~ "large price change")) %>% 
   group_by(subject, income = income2, condition) %>% 
@@ -119,7 +122,7 @@ nice_table <- coarse %>%
          )
 
 ## saving to file the latex code of the table
-sink("Tables/Table_6_income_gradient.tex")
+sink("Tables/Table_5_income_gradient.tex")
 income_table <- nice_table %>% 
   kbl(booktabs = T, 
       col.names = c("", "N", rep(c("Expenditure (€)","Net subsidy (€)","Share (%)"),2)), 
@@ -137,7 +140,7 @@ sink()
 
 ## export same table to pdf
 income_table %>% 
-  save_kable("Tables/Table_6_income.pdf")
+  save_kable("Tables/Table_5_income.pdf")
 
 
 ### tests
@@ -145,6 +148,7 @@ income_table %>%
 ## coarse classification
 
 coarsetest <- focus %>% 
+  filter(caddy == 2) %>% 
   mutate(condition = case_when(treatment == "NS_ct_exp" ~ "small price change",
                                TRUE ~ "large price change")) %>% 
   group_by(subject, income = income2, condition) %>% 
@@ -171,6 +175,7 @@ coarsetest %>%
 ## fine grained classification
 
 finegrainedtest <- focus %>% 
+  filter(caddy == 2) %>% 
   mutate(condition = case_when(treatment == "NS_ct_exp" ~ "small price change",
                                TRUE ~ "large price change")) %>% 
   group_by(subject, income = income, condition) %>% 

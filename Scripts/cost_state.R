@@ -82,7 +82,7 @@ plotme <- dfnut %>%
   left_join(dfexp)
 
 
-## Table 8 -- household benefits and gov't cost of different policies
+## Table A3 -- household benefits and gov't cost of different policies
 
 export_table <- plotme %>% 
   mutate(treatment = fct_recode(treatment, "NutriScore" = "NS",
@@ -111,10 +111,10 @@ export_table <- plotme %>%
 
 # pdf export
 export_table %>% 
-  save_kable("Tables/Table_9_cost_benefit_with_HH.pdf") 
+  save_kable("Tables/Table_A3_cost_benefit_with_HH.pdf") 
 # tex export
   export_table %>%   
-  save_kable("Tables/Table_9_cost_benefit_with_HH.tex") 
+  save_kable("Tables/Table_A3_cost_benefit_with_HH.tex") 
 
 ## cleaning up
 rm(dfcost, dfexp, dfnut, plotme, export_table)
