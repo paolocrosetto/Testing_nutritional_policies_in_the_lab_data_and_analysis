@@ -58,18 +58,18 @@ source("Scripts/regressive.R")
 
 ## exploratory analyses
 
-## change in NS categories
-source("Scripts/NS_change.R")
-
-## change in mean price of items
-source("Scripts/other_changes.R")
-
 ## Cost for the government if we assume our effects hold generally
 source("Scripts/cost_state.R")
 
 
 ######################################
 ## extra analyses used for presentation purposes
+
+## change in NS categories
+source("Scripts/NS_change.R")
+
+## change in mean price of items
+source("Scripts/other_changes.R")
 
 ## Focus on replication of NS2016
 source("Scripts/replication.R")
