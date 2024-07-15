@@ -38,7 +38,7 @@ demo <- demo %>%
                                 "University or more" = "sup4", "Less than high school" = "autre")) %>% 
   mutate(profession = as.factor(profession),
          profession = fct_recode(profession, "Handicraft" = "Artisans", 
-                                             "Exectuives" = "Cadres",
+                                             "Executives" = "Cadres",
                                              "White collars" = "Employés",
                                              "Blue collars" = "Ouvriers",
                                              "Professionals" = "ProfInt",
@@ -122,6 +122,8 @@ sink()
 # creating good-looking pdf table 
 final_table %>% 
   save_kable("Tables/Table_3_demographics.pdf")
+
+
 
 ## cleaning up
 rm(demo)
