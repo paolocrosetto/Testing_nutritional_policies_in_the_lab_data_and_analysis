@@ -14,6 +14,7 @@ library(ggbeeswarm)     ## used for raincloud plots
 library(gghalves)       ## used for raincloud plots
 library(waffle)         ## waffle chart to display the catalog by NS letter
 library(ggridges)       ## used for ridgeline distribution of price plot
+library(patchwork)      ## to compose different ggplots into one super-plot
 
 library(hrbrthemes)     ## nice-looking ggplot themes
 library(scico)          ## nice colorblind friendly and science-based color palettes

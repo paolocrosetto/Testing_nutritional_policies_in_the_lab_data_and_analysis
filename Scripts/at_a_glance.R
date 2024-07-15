@@ -131,7 +131,7 @@ plotme <- summary_FSA %>%
   mutate(term = fct_recode(term, 
                                 "NutriScore 2016" = "caddy2:treatmentNS2016",
                                 "Benchmark 2016" = "caddy2",
-                                "NutriScore" = "caddy2:treatmentNutriScore",
+                                "NutriScore 2019" = "caddy2:treatmentNutriScore",
                                 "NS + large price" = "caddy2:treatmentNS + large price",
                                 "NS + small price" = "caddy2:treatmentNS + small price",
                                 "Implicit price" = "caddy2:treatmentImplicit price",
@@ -140,7 +140,7 @@ plotme <- summary_FSA %>%
          term = fct_rev(term)) %>% 
   mutate(indicator = as.factor(indicator), 
          indicator = fct_relevel(indicator, "ScoreFSA")) %>% 
-  mutate(policy = case_when(term == "NutriScore" ~ "Label",
+  mutate(policy = case_when(term == "NutriScore 2019" ~ "Label",
                             term %in% c("NS + large price","NS + small price") ~ "Policy mix",
                             term %in% c("Implicit price", "Explicit price") ~ "Price",
                             term %in% c("NutriScore 2016","Benchmark 2016") ~ "Benchmarks")) %>% 
@@ -148,6 +148,8 @@ plotme <- summary_FSA %>%
          policy = fct_relevel(policy, "Policy mix", "Price", "Label"),
          policy = fct_rev(policy))
 
+
+## plot for V1 of the paper
 plotme %>% 
   ggplot() + 
   geom_errorbar(aes(x = reorder(term, estimate), ymin = conf.low, ymax = conf.high,
@@ -166,10 +168,59 @@ plotme %>%
         strip.text.y = element_text(face = "bold"),
         axis.text.y = element_text(size = 14))+
   facet_grid(policy~indicator, scales = "free", space = "free_y")
-ggsave("Figures/at_a_glance_means_CI.png",
+
+## saving
+ggsave("Figures/at_a_glance_means_CI_working_paper.png",
        width = 13/1.1, height = 8/1.1, units = "in", dpi = 300)
 
+#" version for revised paper for RR @JEBo
+ScoreFSA <- plotme %>% 
+  filter(indicator == "ScoreFSA") %>% 
+  ggplot() + 
+  geom_errorbar(aes(x = reorder(term, estimate), ymin = conf.low, ymax = conf.high,
+                    group= reorder(term,estimate)), size=0.6, width = 0.1, 
+                position = position_dodge(width = 0.07), color = "grey30")+
+  geom_point(aes(reorder(term, estimate), estimate), fill="#f8766d", size=5, pch=21)+
+  coord_flip()+
+  geom_hline(yintercept = 0, color="indianred", linetype = "dashed")+
+  labs(x = "", y = "ΔScoreFSA -- cart 2 vs cart 1")+
+  theme_ipsum_ps()+
+  theme(legend.position = "none",
+        panel.grid.minor = element_blank(),
+        panel.grid.major.y = element_line(linetype = "dotted", color = "grey70"),
+        plot.background = element_rect(color = "white", fill = "white"),
+        strip.text.x = element_blank(),
+        strip.text.y = element_blank(),
+        axis.text.y = element_text(size = 14), 
+        axis.title.x = element_text(size = 10, hjust = 0.5))+
+  facet_grid(policy~indicator, scales = "free", space = "free_y")
 
+Expenditure <- plotme %>% 
+  filter(indicator == "Expenditure (€/2000kcal)") %>% 
+  ggplot() + 
+  geom_errorbar(aes(x = reorder(term, estimate), ymin = conf.low, ymax = conf.high,
+                    group= reorder(term,estimate)), size=0.6, width = 0.1, 
+                position = position_dodge(width = 0.07), color = "grey30")+
+  geom_point(aes(reorder(term, estimate), estimate), fill = "#00bec3", size=5, pch=21)+
+  coord_flip()+
+  geom_hline(yintercept = 0, color="indianred", linetype = "dashed")+
+  labs(x = "", y = "ΔExpenditure/2000Kcal, € -- cart 2 vs cart 1")+
+  theme_ipsum_ps()+
+  theme(legend.position = "none",
+        panel.grid.minor = element_blank(),
+        panel.grid.major.y = element_line(linetype = "dotted", color = "grey70"),
+        plot.background = element_rect(color = "white", fill = "white"),
+        strip.text.x = element_blank(),
+        strip.text.y = element_blank(),
+        axis.text.y = element_blank(),
+        axis.title.x = element_text(size = 10, hjust = 0.5))+
+  facet_grid(policy~indicator, scales = "free", space = "free_y")
+
+ScoreFSA + Expenditure
+
+## saving
+ggsave("Figures/at_a_glance_means_CI_revision.png",
+       width = 13/1.1, height = 8/1.1, units = "in", dpi = 300)
 
 
 ## Appendix: raincloud plot with all observations
