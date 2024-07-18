@@ -38,10 +38,11 @@ regdf <- glance %>%
   filter(indicator == "Δ scoreFSA") %>% 
   pivot_longer(cols = `1` | `2`, names_to = "caddy", values_to = "value")
 
-# regression
+# regression using FEOLS for a fixed effect regression with errors clustered at the subject level
 reg_FSA <- regdf %>% 
   mutate(treatment = relevel(treatment, ref = 3)) %>% 
   feols(value~caddy*treatment, cluster = "subject" ) 
+
 
 ## NUTRITION
 
@@ -127,20 +128,20 @@ modelsummary(list("ScoreFSA" = reg_FSA,
                            fmt = "%.3f",
                            estimate = "{estimate} ({std.error}){stars}",
                            statistic = NULL,
-                           coef_rename = c("caddy2" = "Cart 2: Benchmark", 
-                                           "(Intercept)" = "Cart 1: Benchmark",
-                                           "treatmentNS2016" = "Cart 1 $\\times$ NutriScore 2016",
-                                           "treatmentExplicit price" = "Cart 1 $\\times$ Explicit large price change",
-                                           "treatmentImplicit price" = "Cart 1 $\\times$ Implicit large price change",
-                                           "treatmentNS + large price" = "Cart 1 $\\times$ NutriScore and large price change",
-                                           "treatmentNS + small price" = "Cart 1 $\\times$ NutriScore and small price change",
-                                           "treatmentNutriScore" = "Cart 1 $\\times$ NutriScore",
+                           coef_rename = c("caddy2" = "Cart 2", 
+                                           "(Intercept)" = "Intercept",
+                                           "treatmentNS2016" = "NutriScore 2016",
+                                           "treatmentExplicit price" = "Explicit large price change",
+                                           "treatmentImplicit price" = "Implicit large price change",
+                                           "treatmentNS + large price" = "NutriScore and large price change",
+                                           "treatmentNS + small price" = "NutriScore and small price change",
+                                           "treatmentNutriScore" = "NutriScore 2019",
                                            "caddy2:treatmentNS2016" = "Cart 2 $\\times$ NutriScore 2016",
                                            "caddy2:treatmentExplicit price" = "Cart 2 $\\times$ Explicit large price change",
                                            "caddy2:treatmentImplicit price" = "Cart 2 $\\times$ Implicit large price change",
                                            "caddy2:treatmentNS + large price" = "Cart 2 $\\times$ NutriScore and large price change",
                                            "caddy2:treatmentNS + small price" = "Cart 2 $\\times$ NutriScore and small price change",
-                                           "caddy2:treatmentNutriScore" = "Cart 2 $\\times$ NutriScore"),
+                                           "caddy2:treatmentNutriScore" = "Cart 2 $\\times$ NutriScore 2019"),
                            output = "Tables/Table_4_regression.tex",
                            title = "Difference-in-difference fixed-effect regression results. Standard error clustered by subject.")
 
@@ -151,25 +152,20 @@ modelsummary(list("ScoreFSA" = reg_FSA,
              fmt = "%.3f",
              estimate = "{estimate} ({std.error}){stars}",
              statistic = NULL,
-             coef_rename = c("caddy2" = "Cart 2: Benchmark", 
-                             "(Intercept)" = "Cart 1: Benchmark",
-                             "treatmentNS2016" = "Cart 1 $\\times$ NutriScore 2016",
-                             "treatmentExplicit price" = "Cart 1 $\\times$ Explicit large price change",
-                             "treatmentImplicit price" = "Cart 1 $\\times$ Implicit large price change",
-                             "treatmentNS + large price" = "Cart 1 $\\times$ NutriScore and large price change",
-                             "treatmentNS + small price" = "Cart 1 $\\times$ NutriScore and small price change",
-                             "treatmentNutriScore" = "Cart 1 $\\times$ NutriScore",
+             coef_rename = c("caddy2" = "Cart 2", 
+                             "(Intercept)" = "Intercept",
+                             "treatmentNS2016" = "NutriScore 2016",
+                             "treatmentExplicit price" = "Explicit large price change",
+                             "treatmentImplicit price" = "Implicit large price change",
+                             "treatmentNS + large price" = "NutriScore and large price change",
+                             "treatmentNS + small price" = "NutriScore and small price change",
+                             "treatmentNutriScore" = "NutriScore 2019",
                              "caddy2:treatmentNS2016" = "Cart 2 $\\times$ NutriScore 2016",
                              "caddy2:treatmentExplicit price" = "Cart 2 $\\times$ Explicit large price change",
                              "caddy2:treatmentImplicit price" = "Cart 2 $\\times$ Implicit large price change",
                              "caddy2:treatmentNS + large price" = "Cart 2 $\\times$ NutriScore and large price change",
                              "caddy2:treatmentNS + small price" = "Cart 2 $\\times$ NutriScore and small price change",
-                             "caddy2:treatmentNutriScore" = "Cart 2 $\\times$ NutriScore"),
-             output = "Tables/Table_4.html",
+                             "caddy2:treatmentNutriScore" = "Cart 2 $\\times$ NutriScore 2019"),             output = "Tables/Table_4.html",
              title = "Difference-in-difference fixed-effect regression results. Standard error clustered by subject.") 
 
 webshot2::webshot(url = "Tables/Table_4.html", file = "Tables/Table_4.png", vwidth = 1500, vheight = 1800, zoom = 2)
-
-
-
-
