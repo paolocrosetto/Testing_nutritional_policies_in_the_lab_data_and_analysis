@@ -1,0 +1,64 @@
+\begin{table}
+\centering
+\begin{tblr}[         %% tabularray outer open
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]},
+column{1}={halign=l,},
+column{2}={halign=c,},
+hline{44}={1,2}{solid, 0.05em, black},
+}                     %% tabularray inner close
+\toprule
+& (1) \\ \midrule %% TinyTableHeader
+(Intercept)                                        & \num{5.594} (\num{0.276})*** \\
+caddy2                                             & \num{-0.255} (\num{0.126})*  \\
+treatmentExplicit price                            & \num{-0.128} (\num{0.454})   \\
+treatmentNeutre2016                                & \num{-0.987} (\num{0.329})** \\
+treatmentNS2016                                    & \num{-0.368} (\num{0.403})   \\
+treatmentNS + large price                          & \num{0.088} (\num{0.467})    \\
+treatmentNS + small price                          & \num{0.709} (\num{0.462})    \\
+treatmentNutriScore                                & \num{0.376} (\num{0.451})    \\
+income2middle                                      & \num{0.134} (\num{0.551})    \\
+income2higher                                      & \num{-0.220} (\num{0.380})   \\
+caddy2 × treatmentExplicit price                   & \num{0.230} (\num{0.185})    \\
+caddy2 × treatmentNeutre2016                       & \num{0.118} (\num{0.163})    \\
+caddy2 × treatmentNS2016                           & \num{0.629} (\num{0.185})*** \\
+caddy2 × treatmentNS + large price                 & \num{0.519} (\num{0.321})    \\
+caddy2 × treatmentNS + small price                 & \num{0.593} (\num{0.215})**  \\
+caddy2 × treatmentNutriScore                       & \num{0.694} (\num{0.240})**  \\
+caddy2 × income2middle                             & \num{-0.205} (\num{0.203})   \\
+caddy2 × income2higher                             & \num{0.261} (\num{0.185})    \\
+treatmentExplicit price × income2middle            & \num{0.328} (\num{0.758})    \\
+treatmentNeutre2016 × income2middle                & \num{0.557} (\num{0.624})    \\
+treatmentNS2016 × income2middle                    & \num{-0.449} (\num{0.657})   \\
+treatmentNS + large price × income2middle          & \num{-0.323} (\num{0.755})   \\
+treatmentNS + small price × income2middle          & \num{-0.476} (\num{0.794})   \\
+treatmentNutriScore × income2middle                & \num{-0.107} (\num{0.800})   \\
+treatmentExplicit price × income2higher            & \num{0.377} (\num{0.606})    \\
+treatmentNeutre2016 × income2higher                & \num{0.758} (\num{0.492})    \\
+treatmentNS2016 × income2higher                    & \num{0.573} (\num{0.541})    \\
+treatmentNS + large price × income2higher          & \num{0.247} (\num{0.595})    \\
+treatmentNS + small price × income2higher          & \num{-0.546} (\num{0.578})   \\
+treatmentNutriScore × income2higher                & \num{-0.099} (\num{0.575})   \\
+caddy2 × treatmentExplicit price × income2middle   & \num{0.087} (\num{0.362})    \\
+caddy2 × treatmentNeutre2016 × income2middle       & \num{0.552} (\num{0.284})+   \\
+caddy2 × treatmentNS2016 × income2middle           & \num{0.310} (\num{0.273})    \\
+caddy2 × treatmentNS + large price × income2middle & \num{0.107} (\num{0.438})    \\
+caddy2 × treatmentNS + small price × income2middle & \num{-0.011} (\num{0.418})   \\
+caddy2 × treatmentNutriScore × income2middle       & \num{-0.372} (\num{0.326})   \\
+caddy2 × treatmentExplicit price × income2higher   & \num{-0.077} (\num{0.340})   \\
+caddy2 × treatmentNeutre2016 × income2higher       & \num{0.157} (\num{0.254})    \\
+caddy2 × treatmentNS2016 × income2higher           & \num{-0.319} (\num{0.280})   \\
+caddy2 × treatmentNS + large price × income2higher & \num{-0.388} (\num{0.405})   \\
+caddy2 × treatmentNS + small price × income2higher & \num{-0.408} (\num{0.280})   \\
+caddy2 × treatmentNutriScore × income2higher       & \num{-0.232} (\num{0.327})   \\
+Num.Obs.                                           & \num{1242}                    \\
+R2                                                 & \num{0.069}                   \\
+R2 Adj.                                            & \num{0.038}                   \\
+AIC                                                & \num{4932.1}                  \\
+BIC                                                & \num{5147.4}                  \\
+RMSE                                               & \num{1.70}                    \\
+Std.Errors                                         & by: subject                    \\
+\bottomrule
+\end{tblr}
+\end{table}
