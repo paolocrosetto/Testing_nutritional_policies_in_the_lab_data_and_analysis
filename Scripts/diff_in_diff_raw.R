@@ -108,7 +108,23 @@ randeff_EXP_controls <- regdf %>%
 varcov_reEXP_controls <- vcovCR(randeff_EXP, type = "CR0")
 
 
-## export regressions to latex:
+### For the referees: 
+### - we export all regressions, both using indicators and using the raw shopping data
+### - we note that the only way we can have a random slope model is by resorting to raw data
+### - this comes at three prices 
+###   1. it departs from pre-reg, where we stated that we'd build individual/caddy indicators and focus on those
+###   2. it forces us to work with different objects, especially for expenditure: 
+###      the indicator computes the average expenditure for 2000Kcal across all products
+###      while the individual data tells us only expenditure per 200Kcal of ONE product
+###   3. the model shows a -1 perfect corr between the random slope and random intercept, signaling a convergence problem
+###      and all diagnostics point us to ditch the random slope and keep only a random intercept
+### - if we keep only the random intercept, there is no reason to go for the raw data, depart from pre-reg, and deal with awkward indicators
+###
+### so in the end we just run the fixed effect and random intercept with and without control, and att those to the paper
+
+
+### Large tables for the referees and editor
+
 ## ScoreFSA
 
 modelsummary(list("Fixed effects" = reg_FSA, 
@@ -190,5 +206,41 @@ modelsummary(list("Fixed effects means" = reg_exp,
   add_header_above(c(" " = 1, "Expenditure" = 6))
             
 
+### simpler table for the appendix
 
 
+modelsummary(list("Fixed effects" = reg_FSA, 
+                  "Random intercept" = reg_FSA_raneff,
+                  "Random intercept controls" = reg_FSA_raneff_controls,
+                  "Fixed effects" = reg_exp, 
+                  "Random intercept" = reg_EXP_raneff,
+                  "Random intercept controls" = reg_EXP_raneff_controls
+                  ),
+             fmt = "%.3f",
+             estimate = "{estimate} ({std.error}){stars}",
+             statistic = NULL,
+             vcov = list(as.matrix(vcov(reg_FSA)), 
+                         as.matrix(vcovCR(reg_FSA_raneff, type = "CR0")), 
+                         as.matrix(vcovCR(reg_FSA_raneff_controls, type = "CR0")), 
+                         as.matrix(vcov(reg_exp)), 
+                         as.matrix(vcovCR(reg_EXP_raneff, type = "CR0")), 
+                         as.matrix(vcovCR(reg_EXP_raneff_controls, type = "CR0"))
+                         ),
+             coef_rename = c("caddy2" = "Cart 2", 
+                             "(Intercept)" = "Intercept",
+                             "treatmentNS2016" = "NutriScore 2016",
+                             "treatmentExplicit price" = "Explicit large price change",
+                             "treatmentImplicit price" = "Implicit large price change",
+                             "treatmentNS + large price" = "NutriScore and large price change",
+                             "treatmentNS + small price" = "NutriScore and small price change",
+                             "treatmentNutriScore" = "NutriScore 2019",
+                             "caddy2:treatmentNS2016" = "Cart 2 $\\times$ NutriScore 2016",
+                             "caddy2:treatmentExplicit price" = "Cart 2 $\\times$ Explicit large price change",
+                             "caddy2:treatmentImplicit price" = "Cart 2 $\\times$ Implicit large price change",
+                             "caddy2:treatmentNS + large price" = "Cart 2 $\\times$ NutriScore and large price change",
+                             "caddy2:treatmentNS + small price" = "Cart 2 $\\times$ NutriScore and small price change",
+                             "caddy2:treatmentNutriScore" = "Cart 2 $\\times$ NutriScore 2019"),
+             #output = "Tables/Table_4_regression.tex",
+             output = "kableExtra",
+             title = "Difference-in-difference fixed-effect regression results. Standard error clustered by subject.") %>% 
+  add_header_above(c(" " = 1, "Score FSA" = 3, "Expenditure" = 3))
