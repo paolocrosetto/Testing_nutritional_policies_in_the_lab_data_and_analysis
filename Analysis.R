@@ -7,6 +7,8 @@ library(broom)          ## tidy test output so that it fits with the tidyverse
 library(kableExtra)     ## nice formatting of Latex tables
 
 library(fixest)         ## fixed effect diff in diff estimation
+library(lme4)           ## random effect diff in diff estimation
+library(clubSandwich)   ## robust standard errors for the random effect estimation
 library(car)            ## linear hypothesis testing for post-estimation testing
 library(modelsummary)   ## swiss army knofe tool to export regression tables in any format
 
@@ -48,6 +50,7 @@ source("Scripts/catalog_analysis.R")
 ## Regression with fixest + linear hp testing from regression
 source("Scripts/diff_in_diff.R")
 source("Scripts/diff_in_diff_revision.R")
+source("Scripts/diff_in_diff_raw.R")
 
 ## At a glance: FSA and expenditure deltas
 source("Scripts/at_a_glance.R")
