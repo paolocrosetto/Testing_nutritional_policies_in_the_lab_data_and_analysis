@@ -1,7 +1,7 @@
 ### generate the clean dataset to run the estimation
 
 glance <- df %>% 
-  group_by(treatment, subject, income2, caddy) %>% 
+  group_by(treatment, subject, income2, caddy, female, age, education) %>% 
   summarise(scoreFSA = (sum(FSAKcal))/sum(actual_Kcal),
             expenditure = 2000*sum(actual_observedprice)/sum(actual_Kcal)) %>% 
   pivot_longer(scoreFSA:expenditure, names_to = "indicator", values_to = "value") %>% 
@@ -42,6 +42,23 @@ regdf <- glance %>%
 reg_FSA <- regdf %>% 
   mutate(treatment = relevel(treatment, ref = 3)) %>% 
   feols(value~caddy*treatment, cluster = "subject" ) 
+
+
+# random effect regression on means, we can only run a random intercept
+reg_FSA_raneff <- regdf %>% 
+  mutate(treatment = relevel(treatment, ref = "Neutre2016")) %>% 
+  lmer(value ~ caddy * treatment + (1 | subject), data = .)
+
+# vcov clustered at the subject level (the vcovCR automatically detects subject as the cluster)
+varcov_raneff <- vcovCR(reg_FSA_raneff, type = "CR0")
+
+# random effect regression on means, but with controls
+reg_FSA_raneff_controls <- regdf %>% 
+  mutate(treatment = relevel(treatment, ref = "Neutre2016")) %>% 
+  lmer(value ~ caddy * treatment + age + female + (1 | subject), data = .)
+
+# vcov clustered at the subject level (the vcovCR automatically detects subject as the cluster)
+varcov_raneff_controls <- vcovCR(reg_FSA_raneff_controls, type = "CR0")
 
 
 ## NUTRITION
@@ -99,6 +116,25 @@ regdf <- glance %>%
 reg_exp <- regdf %>% 
   mutate(treatment = relevel(treatment, ref = 3)) %>% 
   feols(value~caddy*treatment, cluster = "subject") 
+
+# random effect regression on means, we can only run a random intercept
+reg_EXP_raneff <- regdf %>% 
+  mutate(treatment = relevel(treatment, ref = "Neutre2016")) %>% 
+  lmer(value ~ caddy * treatment + (1 | subject), data = .)
+
+# vcov clustered at the subject level (the vcovCR automatically detects subject as the cluster)
+varcov_reEXP_controls <- vcovCR(reg_EXP_raneff, type = "CR0")
+
+
+# random effect regression on means, but with controls
+reg_EXP_raneff_controls <- regdf %>% 
+  mutate(treatment = relevel(treatment, ref = "Neutre2016")) %>% 
+  lmer(value ~ caddy * treatment + age + female + (1 | subject), data = .)
+
+# vcov clustered at the subject level (the vcovCR automatically detects subject as the cluster)
+varcov_raneff_EXP_controls <- vcovCR(reg_EXP_raneff_controls, type = "CR0")
+
+
 
 ## A. in absence of labels
 
