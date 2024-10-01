@@ -45,15 +45,6 @@ regdf <- glance %>%
   filter(indicator == "Δ scoreFSA") %>% 
   mutate(caddy = as.factor(caddy))
 
-
-regdf %>%
-  group_by(subject, caddy) %>%
-  summarise(mean_value = mean(value)) %>%
-  spread(caddy, mean_value) %>%
-  mutate(diff = `2` - `1`) %>% 
-  ggplot(aes(diff))+
-  geom_histogram()
-ggsave("forchatgpt.png")
 # Fixed effect model clustered at the subject level
 fixeff_FSA <- regdf %>% 
   mutate(treatment = relevel(treatment, ref = "Neutre2016")) %>% 
@@ -127,12 +118,12 @@ varcov_reEXP_controls <- vcovCR(randeff_EXP, type = "CR0")
 
 ## ScoreFSA
 
-modelsummary(list("Fixed effects" = reg_FSA, 
-                  "Random intercept" = reg_FSA_raneff,
-                  "Random intercept controls" = reg_FSA_raneff_controls,
-                  "Fixed effects" = fixeff_FSA, 
-                  "Random effects" = randeff_FSA, 
-                  "Random effects controls" = randeff_FSA_controls
+modelsummary(list("FE, individual" = reg_FSA, 
+                  "RE, individual" = reg_FSA_raneff,
+                  "RE controls, individual" = reg_FSA_raneff_controls,
+                  "FE, purchase" = fixeff_FSA, 
+                  "RE, purchase" = randeff_FSA, 
+                  "RE, purchase" = randeff_FSA_controls
                   ),
              fmt = "%.3f",
              estimate = "{estimate} ({std.error}){stars}",
@@ -158,23 +149,20 @@ modelsummary(list("Fixed effects" = reg_FSA,
                              "caddy2:treatmentNS + large price" = "Cart 2 $\\times$ NutriScore and large price change",
                              "caddy2:treatmentNS + small price" = "Cart 2 $\\times$ NutriScore and small price change",
                              "caddy2:treatmentNutriScore" = "Cart 2 $\\times$ NutriScore 2019"),
-             #output = "Tables/Table_4_regression.tex",
-             output = "kableExtra",
-             title = "Difference-in-difference fixed-effect regression results. Standard error clustered by subject.") %>% 
-  add_header_above(c(" " = 1, "Subject indicators" = 3, "Raw shopping data" = 3)) %>%           
-  add_header_above(c(" " = 1, "ScoreFSA" = 6))
+             output = "Extra_tables/All_models_run_FSA.tex",
+             title = "Regressions using different speciications and data, ScoreFSA.")
 
 
 
 
 ## Expenditure
 
-modelsummary(list("Fixed effects means" = reg_exp, 
-                  "Random intercept means" = reg_EXP_raneff,
-                  "Random intercept controls" = reg_EXP_raneff_controls,
-                  "Fixed effects raw" = fixeff_EXP,
-                  "Random effects raw" = randeff_EXP, 
-                  "Random effects raw controls" = randeff_EXP_controls),
+modelsummary(list("FE, ind" = reg_exp, 
+                  "RE, ind" = reg_EXP_raneff,
+                  "RE controls, ind" = reg_EXP_raneff_controls,
+                  "FE, item" = fixeff_EXP,
+                  "RE, item" = randeff_EXP, 
+                  "RE controls, item" = randeff_EXP_controls),
              fmt = "%.3f",
              estimate = "{estimate} ({std.error}){stars}",
              statistic = NULL,
@@ -199,32 +187,23 @@ modelsummary(list("Fixed effects means" = reg_exp,
                              "caddy2:treatmentNS + large price" = "Cart 2 $\\times$ NutriScore and large price change",
                              "caddy2:treatmentNS + small price" = "Cart 2 $\\times$ NutriScore and small price change",
                              "caddy2:treatmentNutriScore" = "Cart 2 $\\times$ NutriScore 2019"),
-             #output = "Tables/Table_4_regression.tex",
-             output = "kableExtra",
-             title = "Difference-in-difference fixed-effect regression results. Standard error clustered by subject.") %>% 
-  add_header_above(c(" " = 1, "Subject indicators" = 3, "Raw shoppig data" = 3)) %>%           
-  add_header_above(c(" " = 1, "Expenditure" = 6))
+             output = "Extra_tables/All_models_run_EXP.tex",
+             title = "Regressions using different speciications and data, Expenditure.") 
             
 
-### simpler table for the appendix
+### simpler tables for the appendix
 
-
-modelsummary(list("Fixed effects" = reg_FSA, 
-                  "Random intercept" = reg_FSA_raneff,
-                  "Random intercept controls" = reg_FSA_raneff_controls,
-                  "Fixed effects" = reg_exp, 
-                  "Random intercept" = reg_EXP_raneff,
-                  "Random intercept controls" = reg_EXP_raneff_controls
+## FSA
+modelsummary(list("Score FSA: Fixed effects" = reg_FSA, 
+                  "Score FSA: Random intercept" = reg_FSA_raneff,
+                  "Score FSA: Random intercept controls" = reg_FSA_raneff_controls
                   ),
              fmt = "%.3f",
              estimate = "{estimate} ({std.error}){stars}",
              statistic = NULL,
              vcov = list(as.matrix(vcov(reg_FSA)), 
                          as.matrix(vcovCR(reg_FSA_raneff, type = "CR0")), 
-                         as.matrix(vcovCR(reg_FSA_raneff_controls, type = "CR0")), 
-                         as.matrix(vcov(reg_exp)), 
-                         as.matrix(vcovCR(reg_EXP_raneff, type = "CR0")), 
-                         as.matrix(vcovCR(reg_EXP_raneff_controls, type = "CR0"))
+                         as.matrix(vcovCR(reg_FSA_raneff_controls, type = "CR0"))
                          ),
              coef_rename = c("caddy2" = "Cart 2", 
                              "(Intercept)" = "Intercept",
@@ -240,7 +219,35 @@ modelsummary(list("Fixed effects" = reg_FSA,
                              "caddy2:treatmentNS + large price" = "Cart 2 $\\times$ NutriScore and large price change",
                              "caddy2:treatmentNS + small price" = "Cart 2 $\\times$ NutriScore and small price change",
                              "caddy2:treatmentNutriScore" = "Cart 2 $\\times$ NutriScore 2019"),
-             #output = "Tables/Table_4_regression.tex",
-             output = "kableExtra",
-             title = "Difference-in-difference fixed-effect regression results. Standard error clustered by subject.") %>% 
-  add_header_above(c(" " = 1, "Score FSA" = 3, "Expenditure" = 3))
+             output = "Tables/Table_A3_robustness_FSA.tex",
+             title = "Fixed and Random incercept model with and without controls, ScoreFSA. Standard error clustered by subject.")
+
+
+## EXP
+modelsummary(list("Expenditure: Fixed effects" = reg_exp, 
+                  "Expenditure: Random intercept" = reg_EXP_raneff,
+                  "Expenditure: Random intercept controls" = reg_EXP_raneff_controls
+            ),
+            fmt = "%.3f",
+            estimate = "{estimate} ({std.error}){stars}",
+            statistic = NULL,
+            vcov = list(as.matrix(vcov(reg_exp)), 
+                        as.matrix(vcovCR(reg_EXP_raneff, type = "CR0")), 
+                        as.matrix(vcovCR(reg_EXP_raneff_controls, type = "CR0"))
+            ),
+            coef_rename = c("caddy2" = "Cart 2", 
+                            "(Intercept)" = "Intercept",
+                            "treatmentNS2016" = "NutriScore 2016",
+                            "treatmentExplicit price" = "Explicit large price change",
+                            "treatmentImplicit price" = "Implicit large price change",
+                            "treatmentNS + large price" = "NutriScore and large price change",
+                            "treatmentNS + small price" = "NutriScore and small price change",
+                            "treatmentNutriScore" = "NutriScore 2019",
+                            "caddy2:treatmentNS2016" = "Cart 2 $\\times$ NutriScore 2016",
+                            "caddy2:treatmentExplicit price" = "Cart 2 $\\times$ Explicit large price change",
+                            "caddy2:treatmentImplicit price" = "Cart 2 $\\times$ Implicit large price change",
+                            "caddy2:treatmentNS + large price" = "Cart 2 $\\times$ NutriScore and large price change",
+                            "caddy2:treatmentNS + small price" = "Cart 2 $\\times$ NutriScore and small price change",
+                            "caddy2:treatmentNutriScore" = "Cart 2 $\\times$ NutriScore 2019"),
+            output = "Tables/Table_A4_robustness_FSA.tex",
+            title = "Fixed and Random incercept model with and without controls, Expenditure Standard error clustered by subject.")

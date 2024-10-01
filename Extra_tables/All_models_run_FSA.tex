@@ -1,0 +1,53 @@
+\begin{landscape}
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Difference-in-difference fixed-effect regression results. Standard error clustered by subject.},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]Q[]},
+column{1}={halign=l,},
+column{2}={halign=c,},
+column{3}={halign=c,},
+column{4}={halign=c,},
+column{5}={halign=c,},
+column{6}={halign=c,},
+column{7}={halign=c,},
+hline{22}={1,2,3,4,5,6,7}{solid, 0.05em, black},
+}                     %% tabularray inner close
+\toprule
+& FE, individual & RE, individual & RE controls, individual & FE, purchase & RE, purchase & RE, purchase  \\ \midrule %% TinyTableHeader
+Intercept                                                             & \num{5.177} (\num{0.275})***  & \num{5.177} (\num{0.274})***  & \num{6.280} (\num{0.594})***  & \num{2.981} (\num{0.219})***  & \num{2.863} (\num{0.207})***  & \num{4.165} (\num{0.446})***  \\
+Cart 2                                                                & \num{0.124} (\num{0.180})     & \num{0.124} (\num{0.178})     & \num{0.124} (\num{0.178})     & \num{0.034} (\num{0.132})     & \num{0.033} (\num{0.132})     & \num{0.033} (\num{0.132})     \\
+Implicit large price change                                           & \num{-1.680} (\num{0.487})*** & \num{-1.680} (\num{0.485})*** & \num{-1.809} (\num{0.486})*** & \num{-1.337} (\num{0.378})*** & \num{-1.244} (\num{0.367})*** & \num{-1.403} (\num{0.365})*** \\
+Explicit large price change                                           & \num{-2.245} (\num{0.471})*** & \num{-2.245} (\num{0.468})*** & \num{-2.338} (\num{0.464})*** & \num{-1.557} (\num{0.339})*** & \num{-1.492} (\num{0.331})*** & \num{-1.614} (\num{0.329})*** \\
+NutriScore 2016                                                       & \num{-0.439} (\num{0.422})    & \num{-0.439} (\num{0.420})    & \num{-0.437} (\num{0.416})    & \num{-0.546} (\num{0.320})+   & \num{-0.508} (\num{0.308})+   & \num{-0.516} (\num{0.305})+   \\
+NutriScore and large price change                                     & \num{-0.985} (\num{0.470})*   & \num{-0.985} (\num{0.467})*   & \num{-1.031} (\num{0.467})*   & \num{-1.153} (\num{0.339})*** & \num{-1.059} (\num{0.341})**  & \num{-1.143} (\num{0.337})*** \\
+NutriScore and small price change                                     & \num{-2.428} (\num{0.467})*** & \num{-2.428} (\num{0.464})*** & \num{-2.456} (\num{0.465})*** & \num{-1.730} (\num{0.345})*** & \num{-1.712} (\num{0.335})*** & \num{-1.715} (\num{0.335})*** \\
+NutriScore 2019                                                       & \num{-2.080} (\num{0.445})*** & \num{-2.080} (\num{0.442})*** & \num{-2.156} (\num{0.442})*** & \num{-1.454} (\num{0.349})*** & \num{-1.378} (\num{0.351})*** & \num{-1.492} (\num{0.344})*** \\
+Cart 2 \$\textbackslash{}times\$ Implicit large price change       & \num{-0.918} (\num{0.282})**  & \num{-0.918} (\num{0.280})**  & \num{-0.918} (\num{0.280})**  & \num{-0.337} (\num{0.190})+   & \num{-0.342} (\num{0.189})+   & \num{-0.343} (\num{0.189})+   \\
+Cart 2 \$\textbackslash{}times\$ Explicit large price change       & \num{-1.488} (\num{0.311})*** & \num{-1.488} (\num{0.309})*** & \num{-1.488} (\num{0.309})*** & \num{-1.160} (\num{0.229})*** & \num{-1.152} (\num{0.227})*** & \num{-1.152} (\num{0.227})*** \\
+Cart 2 \$\textbackslash{}times\$ NutriScore 2016                   & \num{-2.775} (\num{0.320})*** & \num{-2.775} (\num{0.319})*** & \num{-2.775} (\num{0.319})*** & \num{-1.996} (\num{0.219})*** & \num{-1.983} (\num{0.215})*** & \num{-1.982} (\num{0.215})*** \\
+Cart 2 \$\textbackslash{}times\$ NutriScore and large price change & \num{-2.743} (\num{0.407})*** & \num{-2.743} (\num{0.405})*** & \num{-2.743} (\num{0.405})*** & \num{-1.649} (\num{0.260})*** & \num{-1.689} (\num{0.250})*** & \num{-1.694} (\num{0.251})*** \\
+Cart 2 \$\textbackslash{}times\$ NutriScore and small price change & \num{-1.712} (\num{0.317})*** & \num{-1.712} (\num{0.315})*** & \num{-1.712} (\num{0.315})*** & \num{-1.422} (\num{0.235})*** & \num{-1.410} (\num{0.233})*** & \num{-1.410} (\num{0.233})*** \\
+Cart 2 \$\textbackslash{}times\$ NutriScore 2019                   & \num{-2.250} (\num{0.364})*** & \num{-2.250} (\num{0.361})*** & \num{-2.250} (\num{0.361})*** & \num{-1.894} (\num{0.254})*** & \num{-1.858} (\num{0.254})*** & \num{-1.858} (\num{0.254})*** \\
+age                                                                   &                                 &                                 & \num{-0.024} (\num{0.011})*   &                                 &                                 & \num{-0.023} (\num{0.008})**  \\
+femaleTRUE                                                            &                                 &                                 & \num{-0.061} (\num{0.284})    &                                 &                                 & \num{-0.405} (\num{0.209})+   \\
+SD (Intercept subject)                                                &                                 & \num{2.743}                    & \num{2.735}                    &                                 & \num{1.609}                    & \num{1.590}                    \\
+SD (caddy2 subject)                                                   &                                 &                                 &                                 &                                 & \num{0.060}                    & \num{0.077}                    \\
+Cor (Intercept\textasciitilde{}caddy2 subject)                       &                                 &                                 &                                 &                                 & \num{-1.000}                   & \num{-1.000}                   \\
+SD (Observations)                                                     &                                 & \num{1.758}                    & \num{1.758}                    &                                 & \num{8.332}                    & \num{8.332}                    \\
+Num.Obs.                                                              & \num{1242}                     & \num{1242}                     & \num{1242}                     & \num{19361}                    & \num{19361}                    & \num{19361}                    \\
+R2                                                                    & \num{0.168}                    &                                 &                                 & \num{0.017}                    &                                 &                                 \\
+R2 Adj.                                                               & \num{0.160}                    &                                 &                                 & \num{0.016}                    &                                 &                                 \\
+R2 Marg.                                                              &                                 & \num{0.167}                    & \num{0.172}                    &                                 & \num{0.017}                    & \num{0.018}                    \\
+R2 Cond.                                                              &                                 & \num{0.757}                    & \num{0.758}                    &                                 &                                 &                                 \\
+AIC                                                                   & \num{6472.7}                   & \num{6052.1}                   & \num{6059.1}                   & \num{137727.8}                 & \num{137523.8}                 & \num{137525.4}                 \\
+BIC                                                                   & \num{6544.5}                   & \num{6134.0}                   & \num{6151.4}                   & \num{137838.0}                 & \num{137665.4}                 & \num{137682.8}                 \\
+ICC                                                                   &                                 & \num{0.7}                      & \num{0.7}                      &                                 &                                 &                                 \\
+RMSE                                                                  & \num{3.24}                     & \num{1.34}                     & \num{1.34}                     & \num{8.48}                     & \num{8.26}                     & \num{8.26}                     \\
+Std.Errors                                                            & Custom                          & Custom                          & Custom                          & Custom                          & Custom                          & Custom                          \\
+\bottomrule
+\end{talltblr}
+\end{table}
+\end{landscape}
