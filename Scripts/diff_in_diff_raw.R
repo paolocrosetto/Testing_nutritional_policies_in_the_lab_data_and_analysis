@@ -249,5 +249,5 @@ modelsummary(list("Expenditure: Fixed effects" = reg_exp,
                             "caddy2:treatmentNS + large price" = "Cart 2 $\\times$ NutriScore and large price change",
                             "caddy2:treatmentNS + small price" = "Cart 2 $\\times$ NutriScore and small price change",
                             "caddy2:treatmentNutriScore" = "Cart 2 $\\times$ NutriScore 2019"),
-            output = "Tables/Table_A4_robustness_FSA.tex",
+            output = "Tables/Table_A4_robustness_EXP.tex",
             title = "Fixed and Random incercept model with and without controls, Expenditure Standard error clustered by subject.")

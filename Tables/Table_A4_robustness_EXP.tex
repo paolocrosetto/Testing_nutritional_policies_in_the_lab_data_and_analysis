@@ -1,0 +1,46 @@
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Fixed and Random incercept model with and without controls, Expenditure Standard error clustered by subject.},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]},
+column{1}={halign=l,},
+column{2}={halign=c,},
+column{3}={halign=c,},
+column{4}={halign=c,},
+hline{20}={1,2,3,4}{solid, 0.05em, black},
+}                     %% tabularray inner close
+\toprule
+& Expenditure: Fixed effects & Expenditure: Random intercept & Expenditure: Random intercept controls \\ \midrule %% TinyTableHeader
+Intercept                                                             & \num{4.978} (\num{0.128})*** & \num{4.978} (\num{0.127})*** & \num{3.337} (\num{0.348})*** \\
+Cart 2                                                                & \num{0.096} (\num{0.079})    & \num{0.096} (\num{0.078})    & \num{0.096} (\num{0.078})    \\
+Implicit large price change                                           & \num{0.578} (\num{0.225})*   & \num{0.578} (\num{0.224})*   & \num{0.782} (\num{0.219})*** \\
+Explicit large price change                                           & \num{0.646} (\num{0.241})**  & \num{0.646} (\num{0.240})**  & \num{0.803} (\num{0.235})*** \\
+NutriScore 2016                                                       & \num{0.259} (\num{0.197})    & \num{0.259} (\num{0.196})    & \num{0.259} (\num{0.193})    \\
+NutriScore and large price change                                     & \num{0.653} (\num{0.236})**  & \num{0.653} (\num{0.234})**  & \num{0.760} (\num{0.231})**  \\
+NutriScore and small price change                                     & \num{1.059} (\num{0.260})*** & \num{1.059} (\num{0.258})*** & \num{1.071} (\num{0.258})*** \\
+NutriScore 2019                                                       & \num{0.871} (\num{0.233})*** & \num{0.871} (\num{0.231})*** & \num{1.014} (\num{0.227})*** \\
+Cart 2 \$\textbackslash{}times\$ Implicit large price change       & \num{-0.317} (\num{0.114})** & \num{-0.317} (\num{0.113})** & \num{-0.317} (\num{0.113})** \\
+Cart 2 \$\textbackslash{}times\$ Explicit large price change       & \num{-0.086} (\num{0.143})   & \num{-0.086} (\num{0.142})   & \num{-0.086} (\num{0.142})   \\
+Cart 2 \$\textbackslash{}times\$ NutriScore 2016                   & \num{0.293} (\num{0.113})**  & \num{0.293} (\num{0.112})**  & \num{0.293} (\num{0.112})**  \\
+Cart 2 \$\textbackslash{}times\$ NutriScore and large price change & \num{0.100} (\num{0.171})    & \num{0.100} (\num{0.170})    & \num{0.100} (\num{0.170})    \\
+Cart 2 \$\textbackslash{}times\$ NutriScore and small price change & \num{0.156} (\num{0.144})    & \num{0.156} (\num{0.143})    & \num{0.156} (\num{0.143})    \\
+Cart 2 \$\textbackslash{}times\$ NutriScore 2019                   & \num{0.224} (\num{0.137})    & \num{0.224} (\num{0.136})    & \num{0.224} (\num{0.136})    \\
+age                                                                   &                                &                                & \num{0.030} (\num{0.007})*** \\
+femaleTRUE                                                            &                                &                                & \num{0.426} (\num{0.137})**  \\
+SD (Intercept subject)                                                &                                & \num{1.587}                   & \num{1.543}                   \\
+SD (Observations)                                                     &                                & \num{0.697}                   & \num{0.697}                   \\
+Num.Obs.                                                              & \num{1242}                    & \num{1242}                    & \num{1242}                    \\
+R2                                                                    & \num{0.047}                   &                                &                                \\
+R2 Adj.                                                               & \num{0.037}                   &                                &                                \\
+R2 Marg.                                                              &                                & \num{0.047}                   & \num{0.093}                   \\
+R2 Cond.                                                              &                                & \num{0.846}                   & \num{0.846}                   \\
+AIC                                                                   & \num{4905.1}                  & \num{4184.9}                  & \num{4165.7}                  \\
+BIC                                                                   & \num{4976.9}                  & \num{4266.9}                  & \num{4258.0}                  \\
+ICC                                                                   &                                & \num{0.8}                     & \num{0.8}                     \\
+RMSE                                                                  & \num{1.72}                    & \num{0.51}                    & \num{0.51}                    \\
+Std.Errors                                                            & Custom                         & Custom                         & Custom                         \\
+\bottomrule
+\end{talltblr}
+\end{table}
