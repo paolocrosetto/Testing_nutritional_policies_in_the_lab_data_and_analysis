@@ -94,18 +94,19 @@
     geom_line(data = est, aes(x = caddy, y = value, group = 1), inherit.aes = F, color = "darkred", linewidth = 1.3)+
     geom_point(data = est, aes(x = caddy, y = value), inherit.aes = F, color = "darkred", size = 3)+
     scale_x_continuous(breaks = c(1,2))+
-    facet_wrap(~treatment, nrow = 2)+
+    facet_wrap(~treatment, ncol = 2)+
     labs(y = "Score FSA", x = "Shopping cart")+
     theme_ipsum()+
     theme(panel.grid.minor.y = element_blank(), 
           panel.grid.major.y = element_blank(), 
           panel.grid.minor.x = element_blank(), 
           panel.grid.major.x = element_blank(), 
-          plot.background = element_rect(fill = "white", color = "white"))
+          plot.background = element_rect(fill = "white", color = "white"), 
+          legend.position = "none")
   
 ## saving plot  
   ggsave("Figures/Estimation_plot_for_reviewers.png", 
-         width = 12/1.2, 
-         height = 9/1.2, 
-         dpi = 500)
-            
+         width = 9/1.2, 
+         height = 12/1.2, 
+         dpi = 300)
+              
