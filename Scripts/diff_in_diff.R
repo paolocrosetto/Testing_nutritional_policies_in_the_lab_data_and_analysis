@@ -38,10 +38,16 @@ regdf <- glance %>%
   filter(indicator == "Δ scoreFSA") %>% 
   pivot_longer(cols = `1` | `2`, names_to = "caddy", values_to = "value")
 
-# regression using FEOLS for a fixed effect regression with errors clustered at the subject level
+# regression using FEOLS for a regression with errors clustered at the subject level, but NO FIXED EFFECT
 reg_FSA <- regdf %>% 
   mutate(treatment = relevel(treatment, ref = 3)) %>% 
   feols(value~caddy*treatment, cluster = "subject" ) 
+
+
+# now with fixed effects
+reg_FSA_fe <- regdf %>% 
+  mutate(treatment = relevel(treatment, ref = 3)) %>% 
+  feols(value~caddy*treatment | subject, cluster = "subject" ) 
 
 
 # random effect regression on means, we can only run a random intercept
@@ -112,10 +118,15 @@ regdf <- glance %>%
   filter(indicator == "Δ expenditure") %>% 
   pivot_longer(cols = `1` | `2`, names_to = "caddy", values_to = "value")
 
-# regression
+# regression using FEOLS for a regression with errors clustered at the subject level, but NO FIXED EFFECT
 reg_exp <- regdf %>% 
   mutate(treatment = relevel(treatment, ref = 3)) %>% 
   feols(value~caddy*treatment, cluster = "subject") 
+
+# now with fixed effects
+reg_exp_fe <- regdf %>% 
+  mutate(treatment = relevel(treatment, ref = 3)) %>% 
+  feols(value~caddy*treatment | subject, cluster = "subject" ) 
 
 # random effect regression on means, we can only run a random intercept
 reg_EXP_raneff <- regdf %>% 
