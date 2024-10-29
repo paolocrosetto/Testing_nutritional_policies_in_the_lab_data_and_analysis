@@ -54,6 +54,8 @@ source("Scripts/diff_in_diff_raw.R")
 
 ## At a glance: FSA and expenditure deltas
 source("Scripts/at_a_glance.R")
+source("Scripts/slope_plot.R")
+
 
 ## differential impact by revenue
 source("Scripts/regressive.R")
