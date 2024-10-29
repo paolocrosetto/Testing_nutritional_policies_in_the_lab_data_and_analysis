@@ -118,7 +118,7 @@ varcov_reEXP_controls <- vcovCR(randeff_EXP, type = "CR0")
 
 ## ScoreFSA
 
-modelsummary(list("FE, individual" = reg_FSA, 
+modelsummary(list("FE, individual" = reg_FSA_fe, 
                   "RE, individual" = reg_FSA_raneff,
                   "RE controls, individual" = reg_FSA_raneff_controls,
                   "FE, purchase" = fixeff_FSA, 
@@ -157,7 +157,7 @@ modelsummary(list("FE, individual" = reg_FSA,
 
 ## Expenditure
 
-modelsummary(list("FE, ind" = reg_exp, 
+modelsummary(list("FE, ind" = reg_exp_fe, 
                   "RE, ind" = reg_EXP_raneff,
                   "RE controls, ind" = reg_EXP_raneff_controls,
                   "FE, item" = fixeff_EXP,
@@ -194,14 +194,15 @@ modelsummary(list("FE, ind" = reg_exp,
 ### simpler tables for the appendix
 
 ## FSA
-modelsummary(list("Score FSA: Fixed effects" = reg_FSA, 
+modelsummary(list("Score FSA: Fixed effects" = reg_FSA_fe, 
                   "Score FSA: Random intercept" = reg_FSA_raneff,
                   "Score FSA: Random intercept controls" = reg_FSA_raneff_controls
                   ),
              fmt = "%.3f",
              estimate = "{estimate} ({std.error}){stars}",
+             conf_level = 0.95,
              statistic = NULL,
-             vcov = list(as.matrix(vcov(reg_FSA)), 
+             vcov = list(as.matrix(vcov(reg_FSA_fe)), 
                          as.matrix(vcovCR(reg_FSA_raneff, type = "CR0")), 
                          as.matrix(vcovCR(reg_FSA_raneff_controls, type = "CR0"))
                          ),
@@ -224,14 +225,14 @@ modelsummary(list("Score FSA: Fixed effects" = reg_FSA,
 
 
 ## EXP
-modelsummary(list("Expenditure: Fixed effects" = reg_exp, 
+modelsummary(list("Expenditure: Fixed effects" = reg_exp_fe, 
                   "Expenditure: Random intercept" = reg_EXP_raneff,
                   "Expenditure: Random intercept controls" = reg_EXP_raneff_controls
             ),
             fmt = "%.3f",
             estimate = "{estimate} ({std.error}){stars}",
             statistic = NULL,
-            vcov = list(as.matrix(vcov(reg_exp)), 
+            vcov = list(as.matrix(vcov(reg_exp_fe)), 
                         as.matrix(vcovCR(reg_EXP_raneff, type = "CR0")), 
                         as.matrix(vcovCR(reg_EXP_raneff_controls, type = "CR0"))
             ),

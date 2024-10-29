@@ -47,7 +47,7 @@ reg_FSA <- regdf %>%
 # now with fixed effects
 reg_FSA_fe <- regdf %>% 
   mutate(treatment = relevel(treatment, ref = 3)) %>% 
-  feols(value~caddy*treatment | subject, cluster = "subject" ) 
+  feols(value~caddy*treatment | subject, cluster = "subject", model = "compact" ) 
 
 
 # random effect regression on means, we can only run a random intercept
