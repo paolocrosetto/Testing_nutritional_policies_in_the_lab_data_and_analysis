@@ -87,8 +87,8 @@
     ggplot()+
     ## main plot: all data
     aes(x = caddy, y = value, group = subject, color = value)+
-    geom_point()+
     geom_line(alpha = .1, color = "grey30")+
+    geom_point()+
     scale_color_gradient(name = "Score FSA", high = "red", low = "green")+
     ## ancillary: means
     geom_line(data = est, aes(x = caddy, y = value, group = 1), inherit.aes = F, color = "darkred", linewidth = 1.3)+
