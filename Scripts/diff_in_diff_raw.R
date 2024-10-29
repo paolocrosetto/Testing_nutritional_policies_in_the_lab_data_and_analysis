@@ -194,9 +194,9 @@ modelsummary(list("FE, ind" = reg_exp_fe,
 ### simpler tables for the appendix
 
 ## FSA
-modelsummary(list("Score FSA: Fixed effects" = reg_FSA_fe, 
-                  "Score FSA: Random intercept" = reg_FSA_raneff,
-                  "Score FSA: Random intercept controls" = reg_FSA_raneff_controls
+modelsummary(list("Fixed effects" = reg_FSA_fe, 
+                  "Random intercept" = reg_FSA_raneff,
+                  "Random intercept controls" = reg_FSA_raneff_controls
                   ),
              fmt = "%.3f",
              estimate = "{estimate} ({std.error}){stars}",
@@ -221,13 +221,13 @@ modelsummary(list("Score FSA: Fixed effects" = reg_FSA_fe,
                              "caddy2:treatmentNS + small price" = "Cart 2 $\\times$ NutriScore and small price change",
                              "caddy2:treatmentNutriScore" = "Cart 2 $\\times$ NutriScore 2019"),
              output = "Tables/Table_A3_robustness_FSA.tex",
-             title = "Fixed and Random incercept model with and without controls, ScoreFSA. Standard error clustered by subject.")
+             title = "Fixed and Random intercept model with and without controls, ScoreFSA. Standard error clustered by subject.")
 
 
 ## EXP
-modelsummary(list("Expenditure: Fixed effects" = reg_exp_fe, 
-                  "Expenditure: Random intercept" = reg_EXP_raneff,
-                  "Expenditure: Random intercept controls" = reg_EXP_raneff_controls
+modelsummary(list("Fixed effects" = reg_exp_fe, 
+                  "Random intercept" = reg_EXP_raneff,
+                  "Random intercept controls" = reg_EXP_raneff_controls
             ),
             fmt = "%.3f",
             estimate = "{estimate} ({std.error}){stars}",
@@ -251,4 +251,4 @@ modelsummary(list("Expenditure: Fixed effects" = reg_exp_fe,
                             "caddy2:treatmentNS + small price" = "Cart 2 $\\times$ NutriScore and small price change",
                             "caddy2:treatmentNutriScore" = "Cart 2 $\\times$ NutriScore 2019"),
             output = "Tables/Table_A4_robustness_EXP.tex",
-            title = "Fixed and Random incercept model with and without controls, Expenditure Standard error clustered by subject.")
+            title = "Fixed and Random intercept model with and without controls, Expenditure Standard error clustered by subject.")
